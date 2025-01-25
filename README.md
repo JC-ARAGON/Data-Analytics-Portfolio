@@ -17,9 +17,9 @@ This repository contains my portfolio of data analysis projects, showcasing my s
 - **Python**: Pandas and Matplotlib for data cleaning and visualization.
 - **Tableau**: Interactive dashboards for insights visualization.
 
-## Highlighted Projects
-1. **[Global Sales Analysis with Tableau and SQL](Tableau-SQL-Project/README.md)**:
-   - Explores global sales data.
+## Projects
+1. **[Sales Analysis with Tableau and SQL](Tableau-SQL-Project/README.md)**:
+   - Explores sales data.
    - Interactive Tableau dashboard visualizing revenue by region and top-selling products.
 
 2. **[Sales Performance Analysis with SQL](SQL-Data-Analysis/README.md)**:

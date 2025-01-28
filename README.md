@@ -1,7 +1,7 @@
 # Data Analysis Portfolio
 Data Analytics Portfolio: SQL, Tableau and Python Projects
 
-This repository contains my portfolio of data analysis projects, showcasing my skills in SQL, Python, and Tableau for data cleaning, analysis, and visualization.
+This is my portfolio of data analysis projects, showcasing my skills in SQL, Python, and Tableau for data cleaning, analysis, and visualization.
 
 ## Repository Content
 - **Tableau-SQL-Project**: A project combining SQL analysis and Tableau visualization.

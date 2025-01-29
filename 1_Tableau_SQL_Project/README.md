@@ -28,24 +28,12 @@ The analysis is based on four interrelated datasets:
 The primary goals of this project are:
 
 1. To identify key sales trends and customer behavior patterns.
-2. To create actionable insights for decision-makers through interactive dashboards.
+2. To create insights for decision-makers through interactive dashboards.
 3. To answer specific business questions related to sales and customers.
 
 ## **Technologies Used**
 - **SQL Server**: For data querying and exploration.
 - **Tableau**: For creating interactive dashboards and visualizations.
-
-## **Methodology**
-1. **Data Preparation**:
-   - Data was imported into SQL Server.
-   - Missing and inconsistent values were identified and handled.
-
-2. **SQL Query Development**:
-   - Queries were written to extract relevant insights from the data.
-
-3. **Dashboard Design**:
-   - Results from SQL queries were exported and visualized in Tableau.
-   - Dashboards were designed for interactivity, including a parameter to filter data by year.
 
 ## **Dashboards**
 
@@ -65,10 +53,10 @@ This dashboard provides insights into overall sales performance:
    - **Monthly Profit Trends by Category by Year**
    - **Orders by Shipping Method by Year**
 
-![Sales Dashboard](./visuals/sales_dashboard.png)
+![Sales Dashboard](./2_visuals/sales_dashboard.png)
 
 ### **Customer Dashboard**
-This dashboard focuses on customer-related insights:
+This dashboard focuses on customer insights:
 
 1. **Visualizations**:
    - **Sales by State**
@@ -77,7 +65,7 @@ This dashboard focuses on customer-related insights:
    - **Customer Distribution by Number of Orders**
    - **Top 10 Customers by Profit**
 
-![Customer Dashboard](./visuals/customer_dashboard.png)
+![Customer Dashboard](./2_visuals/customer_dashboard.png)
 
 ## **Analysis Questions**
 - What are the total sales, profits, and costs over the years?
@@ -88,6 +76,11 @@ This dashboard focuses on customer-related insights:
 - What is the sales distribution by customer segment?
 - Who are the most profitable customers?
 
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
 ## **Key Insights**
 1. **Sales Performance**:
    - **Total Sales**: $2,297,200.86

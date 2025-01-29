@@ -69,12 +69,15 @@ This dashboard focuses on customer insights:
 ![Customer Dashboard](./2_visuals/02_customer_dashboard.png)
 
 ## **Analysis Questions**
-- What are the total sales, profits, and costs over the years?
-- How do sales, costs, and profits vary by product subcategory?
-- What is the monthly trend of sales and profits across categories?
+- What are the total sales, profits, quantities and costs over the years?
+- Which subcategories had the highest and lowest sales, costs, and profits in 2023?
+- Which products generate the highest sales but have low profitability, and which products have high profitability despite lower sales?
+- How did sales trends evolve month by month in 2023?
+- Which categories had the highest and lowest profits each month in 2023?
 - Which shipping methods are preferred?
 - Which states generate the most revenue?
-- What is the sales distribution by customer segment?
+- Which customer segment generated the highest and lowest sales in 2023?
+- How many customers placed multiple orders in 2023, and what was the most common order frequency?
 - Who are the most profitable customers?
 
 

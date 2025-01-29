@@ -84,12 +84,42 @@ This dashboard focuses on customer insights:
 1. **What are the total sales, profits, quantities and costs over the years?**
    
    This is the query used to retrieve that information:
+   
    ![kpi_query](./2_visuals/kpi_query.png)
    
    This is the chart used in Tableau:
+   
    ![kpi_tableau](./2_visuals/kpi_tableau_visual.png)
 
 2. **Which subcategories had the highest and lowest sales, costs, and profits in 2023?**
+
+   This is the query used to retrieve that information:
+
+   ![kpi_query](./2_visuals/kpi_query.png)
+
+   This is the chart used in Tableau:
+
+    ![kpi_tableau](./2_visuals/kpi_tableau_visual.png)
+
+**Insights**
+1.	Most Profitable Subcategory: Copiers had the highest total profit of $25,031.79, despite having lower total sales ($62,899.39) compared to Phones.
+2.	High Sales, Moderate Profit: Phones generated the highest revenue ($113,370.98) but had a significantly lower profit margin ($13,860.53), suggesting either high costs or aggressive discounting.
+3.	Strong Performance in Accessories and Paper: Both subcategories had good profits, with Accessories at $17,805.24 and Paper at $13,416.86, indicating steady demand.
+4.	Appliances' Marginal Profitability: While Appliances had $43,531.83 in sales, its profit was only $8,016.49, meaning potential cost issues or pricing inefficiencies.
+
+**Recommendations**
+1.	Optimize Phone Pricing and Costs: Since Phones generate high revenue but lower profit, analyze cost structures or reconsider discounts to improve margins.
+2.	Continue Investing in Copiers & Accessories: These categories show strong profitability and demand, making them ideal for further promotion and inventory management.
+3.	Review Appliance Costs & Discounts: Appliances’ low profitability suggests evaluating supplier costs, reducing unnecessary discounts, or reconsidering the product mix.
+4.	Leverage Paper’s Stability: Paper has a solid profit margin, making it a steady revenue contributor. Consider bundling strategies to increase volume sales.
+
+
+
+   
+
+   
+   
+   
    - **Total Sales**: $2,297,200.86
    - **Total Profits**: $286,397.02
    - **Total Costs**: $2,010,803.84
@@ -99,20 +129,20 @@ This dashboard focuses on customer insights:
      - **Chairs**: $330,891.13 in sales with a profit of $26,707.65.
      - **Storage**: $224,958.56 in sales with a profit of $21,408.70.
 
-3. **Regional Trends**:
+5. **Regional Trends**:
    - **Top 3 States by Sales**:
      - **California**: $465,333.76 with a profit of $77,842.74.
      - **New York**: $310,876.27 with a profit of $74,038.55.
      - **Texas**: $170,188.05 but incurred a loss of $25,729.36.
 
-4. **Customer Insights**:
+6. **Customer Insights**:
    - Top 10 customers by profit:
      - **Tamara Chand**: $8,981.32.
      - **Raymond Buch**: $6,976.10.
      - **Sanjit Chand**: $5,757.41.
    - Customer loyalty and profitability are concentrated among a few high-performing customers.
 
-5. **Monthly Sales Trends** (Last 3 months of 2023):
+7. **Monthly Sales Trends** (Last 3 months of 2023):
    - **October**: $65,501.16 in sales with $6,572.07 in profit.
    - **November**: $89,306.24 in sales with $11,141.88 in profit.
    - **December**: $56,969.20 in sales with $7,413.63 in profit.

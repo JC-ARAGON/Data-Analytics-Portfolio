@@ -81,7 +81,8 @@ This dashboard focuses on customer insights:
 - Who are the most profitable customers?
 
 --------------------------------------------------------------------------------------------------------------------------
-1. **What are the total sales, profits, quantities and costs over the years?**:
+1. **What are the total sales, profits, quantities and costs over the years?**
+   
    This is the query used to retrieve that information:
    ![kpi_query](./2_visuals/kpi_query.png)
    

@@ -35,10 +35,10 @@ The primary goals of this project are:
 - **SQL Server**: For data querying and exploration.
 - **Tableau**: For creating interactive dashboards and visualizations.
 
-## **Dashboards**
+## **Dashboards**Remember that you can interact with the dashboards at [this link](https://public.tableau.com/app/profile/juan.cruz.aragon/vizzes).
+
 
 ### **Sales Dashboard**
-Remember that you can interact with the dashboards at [this link](https://public.tableau.com/app/profile/juan.cruz.aragon/vizzes).
 This dashboard provides insights into overall sales performance:
 
 1. **KPIs**:

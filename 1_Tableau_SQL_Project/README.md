@@ -87,7 +87,9 @@ This dashboard focuses on customer insights:
    ![kpi_query](./2_visuals/kpi_query.png)
    
    This is the chart used in Tableau:
-   ![kpi_tableau](./2_visuals/kpi_tableau_visual.png) 
+   ![kpi_tableau](./2_visuals/kpi_tableau_visual.png)
+
+2. **Which subcategories had the highest and lowest sales, costs, and profits in 2023?**
    - **Total Sales**: $2,297,200.86
    - **Total Profits**: $286,397.02
    - **Total Costs**: $2,010,803.84

@@ -80,13 +80,12 @@ This dashboard focuses on customer insights:
 - How many customers placed multiple orders in 2023, and what was the most common order frequency?
 - Who are the most profitable customers?
 
-
-
-
-
 --------------------------------------------------------------------------------------------------------------------------
 1. **What are the total sales, profits, quantities and costs over the years?**:
+   This is the query used to retrieve that information:
    ![kpi_query](./2_visuals/kpi_query.png)
+   
+   This is the chart used in Tableau:
    ![kpi_tableau](./2_visuals/kpi_tableau_visual.png) 
    - **Total Sales**: $2,297,200.86
    - **Total Profits**: $286,397.02

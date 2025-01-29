@@ -24,12 +24,12 @@ ORDER BY Total_Profit DESC;
 
 -- This query compares total sales per month in 2023 and 2022 to identify trends.
 SELECT 
-    YEAR(o.Order_Date) AS Year,
-    MONTH(o.Order_Date) AS Month,
-    SUM(o.Sales) AS Total_Sales
-FROM Orders o
-WHERE YEAR(o.Order_Date) IN (2022, 2023)
-GROUP BY YEAR(o.Order_Date), MONTH(o.Order_Date)
+    YEAR(Order_Date) AS Year,
+    MONTH(Order_Date) AS Month,
+    SUM(Sales) AS Total_Sales
+FROM Orders 
+WHERE YEAR(Order_Date) IN (2022, 2023)
+GROUP BY YEAR(Order_Date), MONTH(Order_Date)
 ORDER BY Year, Month;
 
 
@@ -47,11 +47,11 @@ ORDER BY p.Category, Month;
 
 -- This query counts the number of orders per shipping method in 2023.
 SELECT 
-    o.Ship_Mode,
-    COUNT(o.Order_ID) AS Total_Orders
-FROM Orders o
-WHERE YEAR(o.Order_Date) = 2023
-GROUP BY o.Ship_Mode
+    Ship_Mode,
+    COUNT(Order_ID) AS Total_Orders
+FROM Orders 
+WHERE YEAR(Order_Date) = 2023
+GROUP BY Ship_Mode
 ORDER BY Total_Orders DESC;
 
 

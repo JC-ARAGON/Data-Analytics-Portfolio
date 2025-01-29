@@ -53,7 +53,7 @@ This dashboard provides insights into overall sales performance:
    - **Monthly Profit Trends by Category by Year**
    - **Orders by Shipping Method by Year**
 
-![Sales Dashboard](./2_visuals/sales_dashboard.png)
+![Sales Dashboard](./2_visuals/01_sales_dashboard.png)
 
 ### **Customer Dashboard**
 This dashboard focuses on customer insights:
@@ -65,7 +65,7 @@ This dashboard focuses on customer insights:
    - **Customer Distribution by Number of Orders**
    - **Top 10 Customers by Profit**
 
-![Customer Dashboard](./2_visuals/customer_dashboard.png)
+![Customer Dashboard](./2_visuals/02_customer_dashboard.png)
 
 ## **Analysis Questions**
 - What are the total sales, profits, and costs over the years?

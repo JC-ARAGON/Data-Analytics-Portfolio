@@ -85,8 +85,9 @@ This dashboard focuses on customer insights:
 
 
 --------------------------------------------------------------------------------------------------------------------------
-## **Key Insights**
-1. **Sales Performance**:
+1. **What are the total sales, profits, quantities and costs over the years?**:
+   ![kpi_query](./2_visuals/kpi_query.png)
+   ![kpi_tableau](./2_visuals/kpi_tableau_visual.png) 
    - **Total Sales**: $2,297,200.86
    - **Total Profits**: $286,397.02
    - **Total Costs**: $2,010,803.84
@@ -96,20 +97,20 @@ This dashboard focuses on customer insights:
      - **Chairs**: $330,891.13 in sales with a profit of $26,707.65.
      - **Storage**: $224,958.56 in sales with a profit of $21,408.70.
 
-2. **Regional Trends**:
+3. **Regional Trends**:
    - **Top 3 States by Sales**:
      - **California**: $465,333.76 with a profit of $77,842.74.
      - **New York**: $310,876.27 with a profit of $74,038.55.
      - **Texas**: $170,188.05 but incurred a loss of $25,729.36.
 
-3. **Customer Insights**:
+4. **Customer Insights**:
    - Top 10 customers by profit:
      - **Tamara Chand**: $8,981.32.
      - **Raymond Buch**: $6,976.10.
      - **Sanjit Chand**: $5,757.41.
    - Customer loyalty and profitability are concentrated among a few high-performing customers.
 
-4. **Monthly Sales Trends** (Last 3 months of 2023):
+5. **Monthly Sales Trends** (Last 3 months of 2023):
    - **October**: $65,501.16 in sales with $6,572.07 in profit.
    - **November**: $89,306.24 in sales with $11,141.88 in profit.
    - **December**: $56,969.20 in sales with $7,413.63 in profit.

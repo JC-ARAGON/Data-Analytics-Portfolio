@@ -38,6 +38,7 @@ The primary goals of this project are:
 ## **Dashboards**
 
 ### **Sales Dashboard**
+Remember that you can interact with the dashboards at [this link](https://public.tableau.com/app/profile/juan.cruz.aragon/vizzes).
 This dashboard provides insights into overall sales performance:
 
 1. **KPIs**:

@@ -246,6 +246,74 @@ This dashboard focuses on customer insights:
 
 ---
 
+### **8. Which customer segment generated the highest and lowest sales in 2023?**
+
+#### **Query:**  
+![kpi_query](./2_visuals/15_query_segment.png)
+
+#### **Tableau Visualization:**  
+![kpi_tableau](./2_visuals/16_sales_segment.png)
+
+### **Insights**
+
+1. **Consumers Drive the Highest Sales:** The Consumer segment generated **$331,904.70**, making it the largest revenue contributor.
+2. **Corporate Segment Holds a Strong Position:** Corporate customers accounted for **$241,847.82** in sales, indicating significant B2B demand.
+3. **Home Office Segment is the Smallest:** With **$159,462.73** in sales, Home Office customers contribute the least but still represent a considerable market share.
+
+### **Recommendations**
+
+1. **Enhance Marketing for Consumers:** Since they generate the most revenue, targeted discount campaigns, personalized promotions, and loyalty programs can further increase sales.
+2. **Leverage Corporate Accounts for Higher-Value Deals:** The Corporate segment is strong, so focusing on bulk orders, long-term contracts, or business partnerships could improve sales efficiency.
+3. **Expand Home Office Offerings:** Despite being the smallest segment, Home Office users may benefit from bundled deals, financing options, or subscription-based purchases to drive growth.
+4. **Analyze Profitability by Segment:** Sales alone don’t determine profitability. Checking margins per segment could reveal whether higher sales translate into higher profit.
+
+---
+
+### **9. How many customers placed multiple orders in 2023, and what was the most common order frequency?**
+
+#### **Query:**  
+![kpi_query](./2_visuals/17_query_customer_distribution_or.png)
+
+#### **Tableau Visualization:**  
+![kpi_tableau](./2_visuals/18_customer_orders.png)
+
+### **Insights**
+
+1. **Most Customers Placed 1-2 Orders:** The highest concentration of customers placed either **1 or 2 orders**, with **96 customers ordering once** and **107 ordering twice**.
+2. **Steady Distribution in 3-5 Orders Range:** Around **80+ customers** placed between **3 and 5 orders**, indicating a solid mid-tier group of repeat buyers.
+3. **Potential for Retargeting:** Since the majority of customers placed **5 or fewer orders**, there’s an opportunity to increase retention and order frequency through targeted campaigns.
+
+### **Recommendations**
+
+1. **Encourage Single-Order Customers to Return:** Offer personalized promotions or post-purchase follow-ups to those who only ordered once.
+2. **Leverage the 3-5 Order Group for Loyalty Programs:** Customers in this range have shown consistent engagement—introducing loyalty points or incentives could push them toward higher frequency.
+3. **Analyze High-Frequency Buyers Separately:** Identifying customers who regularly place **6+ orders** can reveal VIP customers or business accounts that deserve special offers or exclusive discounts.
+4. **Optimize Retention Strategies:** If a large number of customers only order once or twice, evaluating the customer journey, pricing, and product selection could improve conversion rates.
+
+---
+
+### **10. Who are the most profitable customers?**
+
+#### **Query:**  
+![kpi_query](./2_visuals/19_query_top_customers.png)
+
+#### **Tableau Visualization:**  
+![kpi_tableau](./2_visuals/20_top_costumers.png)
+
+### **Insights**
+
+1. **Most Profitable Customer:** Raymond Buch generated the highest profit of **$6,780.90**, making him the most valuable customer.
+2. **Significant Contribution from Hunter Lopez & Tom Ashbrook:** Both Hunter Lopez (**$5,045.86**) and Tom Ashbrook (**$4,599.21**) contributed high profits, indicating strong purchasing behavior.
+3. **Profits Drop After the Top 3 Customers:** The profit contribution significantly declines after the top 3 customers, with Andy Reiter (**$2,607.68**) and Jane Waco (**$1,953.27**) bringing in much lower figures.
+4. **VIP Customers Drive Profitability:** The top 5 customers alone account for a large share of total profit, emphasizing the importance of retaining high-value buyers.
+
+### **Recommendations**
+
+1. **Personalized Retention for Top Customers:** Offering exclusive deals, early product access, or dedicated account managers for high-value customers can increase loyalty and spending.
+2. **Analyze Buying Patterns of High-Profit Customers:** Understanding what products or services drive their purchases can help tailor marketing and inventory strategies.
+3. **Identify More Potential VIPs:** Customers with strong purchasing potential but lower profit margins might benefit from targeted promotions to encourage higher spending.
+4. **Leverage Testimonials & Case Studies:** High-value customers like Raymond Buch and Hunter Lopez could be approached for testimonials or referrals, helping build trust with similar potential buyers.
+   
 ---
 
 ## **Project Resources**

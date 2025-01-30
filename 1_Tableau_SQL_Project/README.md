@@ -80,6 +80,107 @@ This dashboard focuses on customer insights:
 - How many customers placed multiple orders in 2023, and what was the most common order frequency?
 - Who are the most profitable customers?
 
+---
+1. Total Sales, Profits, Quantities, and Costs Over the Years
+
+Query:
+
+
+
+Tableau Visualization:
+
+
+
+2. Sales, Costs, and Profits by Subcategory in 2023
+
+Query:
+
+
+
+Tableau Visualization:
+
+
+
+Insights:
+
+Most Profitable Subcategory: Copiers had the highest total profit of $25,031.79, despite having lower total sales ($62,899.39) compared to Phones.
+
+High Sales, Moderate Profit: Phones generated the highest revenue ($113,370.98) but had a significantly lower profit margin ($13,860.53), suggesting either high costs or aggressive discounting.
+
+Strong Performance in Accessories and Paper: Both subcategories had good profits, with Accessories at $17,805.24 and Paper at $13,416.86, indicating steady demand.
+
+Appliances' Marginal Profitability: While Appliances had $43,531.83 in sales, its profit was only $8,016.49, meaning potential cost issues or pricing inefficiencies.
+
+Recommendations:
+
+Optimize Phone Pricing and Costs: Since Phones generate high revenue but lower profit, analyze cost structures or reconsider discounts to improve margins.
+
+Continue Investing in Copiers & Accessories: These categories show strong profitability and demand, making them ideal for further promotion and inventory management.
+
+Review Appliance Costs & Discounts: Appliances’ low profitability suggests evaluating supplier costs, reducing unnecessary discounts, or reconsidering the product mix.
+
+Leverage Paper’s Stability: Paper has a solid profit margin, making it a steady revenue contributor. Consider bundling strategies to increase volume sales.
+
+3. Which products generate the highest sales but have low profitability, and which products have high profitability despite lower sales?
+
+Query:
+
+
+
+Tableau Visualization:
+
+
+
+Insights:
+
+Best Performing Product: The Canon imageCLASS 2200 Advanced Copier generated the highest profit ($15,679.96) and had the highest total sales ($35,699.90), confirming its strong market demand and profitability.
+
+Other High-Profit Products: The Hewlett Packard LaserJet 3310 Copier and the GBC DocuBind TL300 Electric Binding System were also profitable, but at a lower scale, with profits of $3,623.94 and $1,910.59, respectively.
+
+Binding Machines Show Consistent Performance: Both the Fellowes PB300 Plastic Comb Binding Machine and the GBC DocuBind TL300 showed decent profitability, indicating a stable demand in office supplies.
+
+Canon's Strong Presence: Two Canon copier models made it to the top five in terms of profitability, suggesting the brand's strong reputation and customer trust in this segment.
+
+Recommendations:
+
+Invest More in Canon Copiers: The Canon imageCLASS 2200 is highly profitable, making it a strong candidate for increased inventory and targeted marketing campaigns.
+
+Expand Sales of Binding Machines: Since both binding machines performed well, exploring bundle deals or volume discounts could further boost sales.
+
+Analyze Lower-Performing Products: Products with high sales but low profitability should be evaluated to understand cost inefficiencies or pricing strategy issues.
+
+Leverage Brand Loyalty for Future Sales: The success of Canon products suggests an opportunity to introduce and promote newer models under this brand.
+
+4. How did sales trends evolve month by month in 2023?
+
+Query:
+
+
+
+Tableau Visualization:
+
+
+
+Insights:
+
+Overall Sales Growth: Total sales in 2023 increased by 20.36% compared to 2022 ($733,215.26 vs. $609,205.60), indicating a strong upward trend.
+
+Peak Sales Shifted Earlier: The highest sales month in 2022 was December ($96,999.04), while in 2023, the peak was in November ($118,447.83). This could suggest an earlier holiday shopping season or better Black Friday promotions.
+
+Slowest Month Improvement: The lowest sales month in 2022 was January ($18,542.49), while in 2023, it was February ($20,301.13). Despite February being the weakest month, it still showed a small improvement over the previous year.
+
+Holiday Sales Strengthened: The November peak in 2023 outperformed December 2022, suggesting that holiday shopping habits may have shifted earlier.
+
+Recommendations:
+
+Capitalize on Early Holiday Demand: Since November had the highest sales in 2023, businesses should start holiday promotions earlier and optimize Black Friday/Cyber Monday campaigns.
+
+Address Post-Holiday Slumps: January and February continue to be the slowest months. Implement off-season discounts or targeted marketing efforts to boost Q1 sales.
+
+Monitor Trends for Further Shifts: If this earlier peak continues, adjust inventory planning and marketing budgets accordingly to maximize revenue.
+
+Investigate the Factors Behind the Growth: The 20.36% overall increase is positive, but understanding whether it was due to higher pricing, increased demand, or better promotions will help refine future strategies.
+
 ## **Project Resources**
 - **[Visuals](./visuals)** - Folder containing screenshots of Tableau dashboards.
 - **[SQL Queries](./sql_queries)** - Folder containing the SQL queries used in this project.

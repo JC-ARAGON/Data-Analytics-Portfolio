@@ -95,11 +95,11 @@ This dashboard focuses on customer insights:
 
    This is the query used to retrieve that information:
 
-   ![kpi_query](./2_visuals/05_query_product_performance.png)
+   ![kpi_query](./2_visuals/21_query_sales_cost_profit.png)
 
    This is the chart used in Tableau:
 
-    ![kpi_tableau](./2_visuals/06_product_performance.png)
+    ![kpi_tableau](./2_visuals/22_sales_costs_profits_subcategory.png)
 
 **Insights**
 1.	Most Profitable Subcategory: Copiers had the highest total profit of $25,031.79, despite having lower total sales ($62,899.39) compared to Phones.

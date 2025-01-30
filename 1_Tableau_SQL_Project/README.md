@@ -161,7 +161,7 @@ This dashboard focuses on customer insights:
 
  This is the query used to retrieve that information:
 
-![kpi_query](./2_visuals/09_query_profit_category_trends.pn)
+![kpi_query](./2_visuals/09_query_profit_category_trends.png)
 
  This is the chart used in Tableau:
 

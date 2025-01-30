@@ -163,6 +163,89 @@ This dashboard focuses on customer insights:
 3. **Monitor Trends for Further Shifts:** If this earlier peak continues, adjust **inventory planning** and **marketing budgets** accordingly to maximize revenue.
 4. **Investigate the Factors Behind the Growth:** The **20.36% overall increase** is positive, but understanding whether it was due to **higher pricing, increased demand, or better promotions** will help refine future strategies.
 
+## **Sales and Customer Analysis Insights**
+
+### **5. Which categories had the highest and lowest profits each month in 2023?**
+
+#### **Query:**  
+![kpi_query](./2_visuals/09_query_profit_category_trends.png)
+
+#### **Tableau Visualization:**  
+![kpi_tableau](./2_visuals/10_monthly_trend_profit_category.png)
+
+### **Insights**
+
+1. **Best Performing Month per Category:**
+   - **Furniture:** September (**$1,632.58**)
+   - **Office Supplies:** August (**$6,227.16**)
+   - **Technology:** March (**$11,084.33**)
+
+2. **Worst Performing Month per Category:**
+   - **Furniture:** October (**-$2,525.35**, indicating a loss)
+   - **Office Supplies:** February (**$667.74**, lowest but still positive)
+   - **Technology:** April (**-$2,647.50**, indicating a loss)
+
+3. **Overall Category Performance in 2023:**
+   - **Technology** had the highest total profit (**$53,557.94**) across the year.
+   - **Office Supplies** generated **$40,805.81** in profit, showing stability.
+   - **Furniture** had the weakest performance with a total profit of **$3,347.90**, significantly lower than other categories.
+
+### **Recommendations**
+
+1. **Investigate Losses in Furniture & Technology:** The negative profits in October (Furniture) and April (Technology) suggest possible high discounting, inventory costs, or supply chain issues.
+2. **Strengthen Sales in Low Months:** February had the lowest profit for Office Supplies, meaning promotions or bundled deals in Q1 could help boost early-year performance.
+3. **Capitalize on Strong Months:** Since March (Technology), August (Office Supplies), and September (Furniture) had peak profits, these periods should be prioritized for inventory management and marketing campaigns.
+4. **Reevaluate Furniture’s Business Strategy:** Given that Furniture had a total profit of just **$3,347.90**, compared to over **$53K** in Technology, it may be necessary to adjust pricing, reduce costs, or focus on higher-margin items.
+
+---
+
+### **6. Which shipping methods are preferred?**
+
+#### **Query:**  
+![kpi_query](./2_visuals/11_query_shipping_method.png)
+
+#### **Tableau Visualization:**  
+![kpi_tableau](./2_visuals/12_orders_shipping_method.png)
+
+### **Insights**
+
+1. **Most Used Shipping Method:** Standard Class was the most frequently used option, accounting for **1,897 orders**, making it the dominant shipping method.
+2. **Second Class as a Secondary Option:** Second Class shipping was the second most popular with **657 orders**, which is significantly lower than Standard Class.
+3. **Expedited Shipping Usage:** First Class was used **572 times**, showing a preference for slightly faster delivery when necessary.
+4. **Least Used Method – Same Day Shipping:** Only **186 orders** were shipped using Same Day service, indicating either high costs or low demand for immediate deliveries.
+
+### **Recommendations**
+
+1. **Optimize Standard Class Logistics:** Since Standard Class is the most chosen option, ensuring cost-effectiveness and delivery reliability will improve customer satisfaction.
+2. **Encourage Faster Shipping Options:** If Same Day shipping has low adoption, consider promotional discounts or bundling faster shipping with premium services.
+3. **Evaluate Customer Demand for Faster Shipping:** If First Class and Same Day are growing in popularity, investing in better inventory placement or distribution centers could improve efficiency.
+
+---
+
+### **7. Which states generate the most revenue?**
+
+#### **Query:**  
+![kpi_query](./2_visuals/13_query_top_states.png)
+
+#### **Tableau Visualization:**  
+![kpi_tableau](./2_visuals/14_top10_states.png)
+
+### **Insights**
+
+1. **California Leads by a Large Margin:** California generated **$147,361.11** in total sales, making it the top-performing state by a wide margin.
+2. **New York as the Second Best Performer:** With **$93,922.99** in sales, New York is significantly behind California but still a strong market.
+3. **Washington in a Solid Third Position:** **$65,539.90** in sales suggests Washington has strong demand but lags behind the top two states.
+4. **Texas and Pennsylvania are Competitive:** Texas (**$43,421.76**) and Pennsylvania (**$42,688.31**) have close sales figures, indicating they are strong mid-tier performers.
+
+### **Recommendations**
+
+1. **Expand Marketing and Inventory in California & New York:** Given their high sales volumes, increasing targeted promotions and localized inventory in these states can maximize revenue.
+2. **Leverage Growth in Washington:** With **$65,539.90** in sales, Washington is a growing market that may benefit from increased marketing efforts.
+3. **Analyze Texas and Pennsylvania Further:** Since their sales figures are similar, exploring local demand patterns could help determine whether pricing, product availability, or competition is affecting growth.
+4. **Evaluate Regional Sales Trends for Other States:** If other states are growing faster than expected, consider shifting resources toward emerging markets.
+
+---
+
 ---
 
 ## **Project Resources**

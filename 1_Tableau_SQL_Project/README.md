@@ -137,7 +137,7 @@ This dashboard focuses on customer insights:
 
 4.**- How did sales trends evolve month by month in 2023?**
 
-   This is the query used to retrieve that information:
+ This is the query used to retrieve that information:
 
  ![kpi_query](./2_visuals/07_query_sales_trends.png)
 
@@ -157,8 +157,35 @@ This dashboard focuses on customer insights:
 3.	Monitor Trends for Further Shifts: If this earlier peak continues, adjust inventory planning and marketing budgets accordingly to maximize revenue.
 4.	Investigate the Factors Behind the Growth: The 20.36% overall increase is positive, but understanding whether it was due to higher pricing, increased demand, or better promotions will help refine future strategies.
 
+5.	**- Which categories had the highest and lowest profits each month in 2023?**
 
+ This is the query used to retrieve that information:
 
+![kpi_query](./2_visuals/07_query_sales_trends.png)
+
+ This is the chart used in Tableau:
+
+ ![kpi_tableau](./2_visuals/08_monthly_trend_sales.png)
+
+**Insights**
+1.	Best Performing Month per Category:
+o	Furniture: September ($1,632.58)
+o	Office Supplies: August ($6,227.16)
+o	Technology: March ($11,084.33)
+2.	Worst Performing Month per Category:
+o	Furniture: October (-$2,525.35, indicating a loss)
+o	Office Supplies: February ($667.74, lowest but still positive)
+o	Technology: April (-$2,647.50, indicating a loss)
+3.	Overall Category Performance in 2023:
+o	Technology had the highest total profit ($53,557.94) across the year.
+o	Office Supplies generated $40,805.81 in profit, showing stability.
+o	Furniture had the weakest performance with a total profit of $3,347.90, significantly lower than other categories.
+
+**Recommendations**
+1.	Investigate Losses in Furniture & Technology: The negative profits in October (Furniture) and April (Technology) suggest possible high discounting, inventory costs, or supply chain issues.
+2.	Strengthen Sales in Low Months: February had the lowest profit for Office Supplies, meaning promotions or bundled deals in Q1 could help boost early-year performance.
+3.	Capitalize on Strong Months: Since March (Technology), August (Office Supplies), and September (Furniture) had peak profits, these periods should be prioritized for inventory management and marketing campaigns.
+4.	Reevaluate Furniture’s Business Strategy: Given that Furniture had a total profit of just $3,347.90, compared to over $53K in Technology, it may be necessary to adjust pricing, reduce costs, or focus on higher-margin items.
 
 
 

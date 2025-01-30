@@ -83,7 +83,7 @@ This dashboard focuses on customer insights:
 ---
 ## **Sales and Customer Analysis Insights**
 
-### **1. Total Sales, Profits, Quantities, and Costs Over the Years**
+### **1. What are the total sales, profits, quantities and costs over the years?**
 
 #### **Query:**  
 ![kpi_query](./2_visuals/03_kpi_query.png)
@@ -93,7 +93,7 @@ This dashboard focuses on customer insights:
 
 ---
 
-### **2. Sales, Costs, and Profits by Subcategory in 2023**
+### **2. Which subcategories had the highest and lowest sales, costs, and profits in 2023?**
 
 #### **Query:**  
 ![kpi_query](./2_visuals/21_query_sales_cost_profit.png)
@@ -103,10 +103,10 @@ This dashboard focuses on customer insights:
 
 ### **Insights**
 
-1. **Most Profitable Subcategory:** Copiers had the highest total profit of **$25,031.79**, despite having lower total sales (**$62,899.39**) compared to Phones.
-2. **High Sales, Moderate Profit:** Phones generated the highest revenue (**$113,370.98**) but had a significantly lower profit margin (**$13,860.53**), suggesting either high costs or aggressive discounting.
-3. **Strong Performance in Accessories and Paper:** Both subcategories had good profits, with Accessories at **$17,805.24** and Paper at **$13,416.86**, indicating steady demand.
-4. **Appliances' Marginal Profitability:** While Appliances had **$43,531.83** in sales, its profit was only **$8,016.49**, meaning potential cost issues or pricing inefficiencies.
+1. **Most Profitable Subcategory:** Copiers had the highest total profit of **$25,031**, despite having lower total sales (**$62,899**) compared to Phones.
+2. **High Sales, Moderate Profit:** Phones generated the highest revenue (**$113,370**) but had a significantly lower profit margin (**$13,860**), suggesting either high costs or aggressive discounting.
+3. **Strong Performance in Accessories and Paper:** Both subcategories had good profits, with Accessories at **$17,805** and Paper at **$13,416**, indicating steady demand.
+4. **Appliances' Marginal Profitability:** While Appliances had **$43,531** in sales, its profit was only **$8,016**, meaning potential cost issues or pricing inefficiencies.
 
 ### **Recommendations**
 
@@ -127,8 +127,8 @@ This dashboard focuses on customer insights:
 
 ### **Insights**
 
-1. **Best Performing Product:** The **Canon imageCLASS 2200 Advanced Copier** generated the highest profit (**$15,679.96**) and had the highest total sales (**$35,699.90**), confirming its strong market demand and profitability.
-2. **Other High-Profit Products:** The **Hewlett Packard LaserJet 3310 Copier** and the **GBC DocuBind TL300 Electric Binding System** were also profitable, but at a lower scale, with profits of **$3,623.94** and **$1,910.59**, respectively.
+1. **Best Performing Product:** The **Canon imageCLASS 2200 Advanced Copier** generated the highest profit (**$15,679**) and had the highest total sales (**$35,699**), confirming its strong market demand and profitability.
+2. **Other High-Profit Products:** The **Hewlett Packard LaserJet 3310 Copier** and the **GBC DocuBind TL300 Electric Binding System** were also profitable, but at a lower scale, with profits of **$3,623** and **$1,910**, respectively.
 3. **Binding Machines Show Consistent Performance:** Both the **Fellowes PB300 Plastic Comb Binding Machine** and the **GBC DocuBind TL300** showed decent profitability, indicating a stable demand in office supplies.
 4. **Canon's Strong Presence:** Two **Canon copier models** made it to the top five in terms of profitability, suggesting the brand's strong reputation and customer trust in this segment.
 
@@ -151,9 +151,9 @@ This dashboard focuses on customer insights:
 
 ### **Insights**
 
-1. **Overall Sales Growth:** Total sales in 2023 increased by **20.36%** compared to 2022 (**$733,215.26 vs. $609,205.60**), indicating a strong upward trend.
-2. **Peak Sales Shifted Earlier:** The highest sales month in 2022 was **December** (**$96,999.04**), while in 2023, the peak was in **November** (**$118,447.83**). This could suggest an earlier holiday shopping season or better **Black Friday promotions**.
-3. **Slowest Month Improvement:** The lowest sales month in 2022 was **January** (**$18,542.49**), while in 2023, it was **February** (**$20,301.13**). Despite February being the weakest month, it still showed a small improvement over the previous year.
+1. **Overall Sales Growth:** Total sales in 2023 increased by **20.36%** compared to 2022 (**$733,215 vs. $609,205**), indicating a strong upward trend.
+2. **Peak Sales Shifted Earlier:** The highest sales month in 2022 was **December** (**$96,999**), while in 2023, the peak was in **November** (**$118,447.83**). This could suggest an earlier holiday shopping season or better **Black Friday promotions**.
+3. **Slowest Month Improvement:** The lowest sales month in 2022 was **January** (**$18,542**), while in 2023, it was **February** (**$20,301.13**). Despite February being the weakest month, it still showed a small improvement over the previous year.
 4. **Holiday Sales Strengthened:** The **November peak in 2023** outperformed **December 2022**, suggesting that holiday shopping habits may have shifted earlier.
 
 ### **Recommendations**
@@ -176,19 +176,19 @@ This dashboard focuses on customer insights:
 ### **Insights**
 
 1. **Best Performing Month per Category:**
-   - **Furniture:** September (**$1,632.58**)
-   - **Office Supplies:** August (**$6,227.16**)
-   - **Technology:** March (**$11,084.33**)
+   - **Furniture:** September (**$1,632**)
+   - **Office Supplies:** August (**$6,227**)
+   - **Technology:** March (**$11,084**)
 
 2. **Worst Performing Month per Category:**
-   - **Furniture:** October (**-$2,525.35**, indicating a loss)
-   - **Office Supplies:** February (**$667.74**, lowest but still positive)
-   - **Technology:** April (**-$2,647.50**, indicating a loss)
+   - **Furniture:** October (**-$2,525**, indicating a loss)
+   - **Office Supplies:** February (**$667**, lowest but still positive)
+   - **Technology:** April (**-$2,647**, indicating a loss)
 
 3. **Overall Category Performance in 2023:**
-   - **Technology** had the highest total profit (**$53,557.94**) across the year.
-   - **Office Supplies** generated **$40,805.81** in profit, showing stability.
-   - **Furniture** had the weakest performance with a total profit of **$3,347.90**, significantly lower than other categories.
+   - **Technology** had the highest total profit (**$53,557**) across the year.
+   - **Office Supplies** generated **$40,805** in profit, showing stability.
+   - **Furniture** had the weakest performance with a total profit of **$3,347**, significantly lower than other categories.
 
 ### **Recommendations**
 
@@ -209,10 +209,10 @@ This dashboard focuses on customer insights:
 
 ### **Insights**
 
-1. **Most Used Shipping Method:** Standard Class was the most frequently used option, accounting for **1,897 orders**, making it the dominant shipping method.
-2. **Second Class as a Secondary Option:** Second Class shipping was the second most popular with **657 orders**, which is significantly lower than Standard Class.
-3. **Expedited Shipping Usage:** First Class was used **572 times**, showing a preference for slightly faster delivery when necessary.
-4. **Least Used Method – Same Day Shipping:** Only **186 orders** were shipped using Same Day service, indicating either high costs or low demand for immediate deliveries.
+1. **Most Used Shipping Method:** Standard Class was the most frequently used option, accounting for **990 orders**, making it the dominant shipping method.
+2. **Second Class as a Secondary Option:** Second Class shipping was the second most popular with **324 orders**, which is significantly lower than Standard Class.
+3. **Expedited Shipping Usage:** First Class was used **284 times**, showing a preference for slightly faster delivery when necessary.
+4. **Least Used Method – Same Day Shipping:** Only **89 orders** were shipped using Same Day service, indicating either high costs or low demand for immediate deliveries.
 
 ### **Recommendations**
 
@@ -232,15 +232,15 @@ This dashboard focuses on customer insights:
 
 ### **Insights**
 
-1. **California Leads by a Large Margin:** California generated **$147,361.11** in total sales, making it the top-performing state by a wide margin.
-2. **New York as the Second Best Performer:** With **$93,922.99** in sales, New York is significantly behind California but still a strong market.
-3. **Washington in a Solid Third Position:** **$65,539.90** in sales suggests Washington has strong demand but lags behind the top two states.
-4. **Texas and Pennsylvania are Competitive:** Texas (**$43,421.76**) and Pennsylvania (**$42,688.31**) have close sales figures, indicating they are strong mid-tier performers.
+1. **California Leads by a Large Margin:** California generated **$147,361** in total sales, making it the top-performing state by a wide margin.
+2. **New York as the Second Best Performer:** With **$93,922** in sales, New York is significantly behind California but still a strong market.
+3. **Washington in a Solid Third Position:** **$65,539** in sales suggests Washington has strong demand but lags behind the top two states.
+4. **Texas and Pennsylvania are Competitive:** Texas (**$43,421**) and Pennsylvania (**$42,688**) have close sales figures, indicating they are strong mid-tier performers.
 
 ### **Recommendations**
 
 1. **Expand Marketing and Inventory in California & New York:** Given their high sales volumes, increasing targeted promotions and localized inventory in these states can maximize revenue.
-2. **Leverage Growth in Washington:** With **$65,539.90** in sales, Washington is a growing market that may benefit from increased marketing efforts.
+2. **Leverage Growth in Washington:** With **$65,539** in sales, Washington is a growing market that may benefit from increased marketing efforts.
 3. **Analyze Texas and Pennsylvania Further:** Since their sales figures are similar, exploring local demand patterns could help determine whether pricing, product availability, or competition is affecting growth.
 4. **Evaluate Regional Sales Trends for Other States:** If other states are growing faster than expected, consider shifting resources toward emerging markets.
 
@@ -256,9 +256,9 @@ This dashboard focuses on customer insights:
 
 ### **Insights**
 
-1. **Consumers Drive the Highest Sales:** The Consumer segment generated **$331,904.70**, making it the largest revenue contributor.
-2. **Corporate Segment Holds a Strong Position:** Corporate customers accounted for **$241,847.82** in sales, indicating significant B2B demand.
-3. **Home Office Segment is the Smallest:** With **$159,462.73** in sales, Home Office customers contribute the least but still represent a considerable market share.
+1. **Consumers Drive the Highest Sales:** The Consumer segment generated **$331,904**, making it the largest revenue contributor.
+2. **Corporate Segment Holds a Strong Position:** Corporate customers accounted for **$241,847** in sales, indicating significant B2B demand.
+3. **Home Office Segment is the Smallest:** With **$159,462** in sales, Home Office customers contribute the least but still represent a considerable market share.
 
 ### **Recommendations**
 
@@ -279,8 +279,8 @@ This dashboard focuses on customer insights:
 
 ### **Insights**
 
-1. **Most Customers Placed 1-2 Orders:** The highest concentration of customers placed either **1 or 2 orders**, with **96 customers ordering once** and **107 ordering twice**.
-2. **Steady Distribution in 3-5 Orders Range:** Around **80+ customers** placed between **3 and 5 orders**, indicating a solid mid-tier group of repeat buyers.
+1. **Most Customers Placed 1-2 Orders:** The highest concentration of customers placed either **1 or 2 orders**, with **200 customers ordering once** and also **200 ordering twice**.
+2. **Steady Distribution in 3-5 Orders Range:** Around **250+ customers** placed between **3 and 5 orders**, indicating a solid mid-tier group of repeat buyers.
 3. **Potential for Retargeting:** Since the majority of customers placed **5 or fewer orders**, there’s an opportunity to increase retention and order frequency through targeted campaigns.
 
 ### **Recommendations**
@@ -302,9 +302,9 @@ This dashboard focuses on customer insights:
 
 ### **Insights**
 
-1. **Most Profitable Customer:** Raymond Buch generated the highest profit of **$6,780.90**, making him the most valuable customer.
-2. **Significant Contribution from Hunter Lopez & Tom Ashbrook:** Both Hunter Lopez (**$5,045.86**) and Tom Ashbrook (**$4,599.21**) contributed high profits, indicating strong purchasing behavior.
-3. **Profits Drop After the Top 3 Customers:** The profit contribution significantly declines after the top 3 customers, with Andy Reiter (**$2,607.68**) and Jane Waco (**$1,953.27**) bringing in much lower figures.
+1. **Most Profitable Customer:** Raymond Buch generated the highest profit of **$6,780**, making him the most valuable customer.
+2. **Significant Contribution from Hunter Lopez & Tom Ashbrook:** Both Hunter Lopez (**$5,045**) and Tom Ashbrook (**$4,599**) contributed high profits, indicating strong purchasing behavior.
+3. **Profits Drop After the Top 3 Customers:** The profit contribution significantly declines after the top 3 customers, with Andy Reiter (**$2,607**) and Jane Waco (**$1,953**) bringing in much lower figures.
 4. **VIP Customers Drive Profitability:** The top 5 customers alone account for a large share of total profit, emphasizing the importance of retaining high-value buyers.
 
 ### **Recommendations**

@@ -317,12 +317,14 @@ This dashboard focuses on customer insights:
 ---
 
 ## **Project Resources**
-- **[Visuals](./visuals)** - Folder containing screenshots of Tableau dashboards.
-- **[SQL Queries](./sql_queries)** - Folder containing the SQL queries used in this project.
+
+- **[Visuals](./1_data)** - Datasets
+- **[Visuals](./2_visuals)** - Folder containing screenshots of Tableau dashboards and SQL queries.
+- **[SQL Queries](./3_sql_queries)** - Folder containing the SQL queries used in this project.
 
 ## **How to Reproduce the Project**
 1. Load the datasets into **SQL Server**.
-2. Execute the SQL queries provided in the `sql_queries` folder.
+2. Execute the SQL queries provided in the `3_sql_queries` folder.
 3. Interact with the dashboards at [this link](https://public.tableau.com/app/profile/juan.cruz.aragon/vizzes).
 
 ---

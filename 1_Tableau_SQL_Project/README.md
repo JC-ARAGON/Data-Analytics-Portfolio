@@ -168,22 +168,17 @@ This dashboard focuses on customer insights:
  ![kpi_tableau](./2_visuals/08_monthly_trend_sales.png)
 
 **Insights**
-1.	Best Performing Month per Category:
-   
+1.	Best Performing Month per Category:  
 o	Furniture: September ($1,632.58)
-
 o	Office Supplies: August ($6,227.16)
-
 o	Technology: March ($11,084.33)
-3.	Worst Performing Month per Category:
 
+2.	Worst Performing Month per Category:
 o	Furniture: October (-$2,525.35, indicating a loss)
-
 o	Office Supplies: February ($667.74, lowest but still positive)
-
 o	Technology: April (-$2,647.50, indicating a loss)
 
-4.	Overall Category Performance in 2023:
+3.	Overall Category Performance in 2023:
    
 o	Technology had the highest total profit ($53,557.94) across the year.
 

@@ -8,6 +8,7 @@ This is my portfolio of data analysis projects, showcasing my skills in SQL, Pyt
   - `data`: Data files used in the analysis.
   - `sql_queries`: SQL queries used to extract insights.
   - `visuals`: Screenshots of the Tableau dashboard.
+  - `README`: Detailed Project Explanation and Walkthrough.
 - **SQL-Data-Analysis/**: A standalone project focused entirely on SQL analysis.
   - `data/`: Processed datasets.
   - `sql_queries/`: SQL queries for data analysis.

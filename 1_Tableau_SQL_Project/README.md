@@ -318,7 +318,7 @@ This dashboard focuses on customer insights:
 
 ## **Project Resources**
 
-- **[Visuals](./1_data)** - Datasets
+- **[Data](./1_data)** - Datasets
 - **[Visuals](./2_visuals)** - Folder containing screenshots of Tableau dashboards and SQL queries.
 - **[SQL Queries](./3_sql_queries)** - Folder containing the SQL queries used in this project.
 

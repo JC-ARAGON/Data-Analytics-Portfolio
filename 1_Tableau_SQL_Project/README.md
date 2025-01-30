@@ -113,56 +113,54 @@ This dashboard focuses on customer insights:
 3.	Review Appliance Costs & Discounts: Appliances’ low profitability suggests evaluating supplier costs, reducing unnecessary discounts, or reconsidering the product mix.
 4.	Leverage Paper’s Stability: Paper has a solid profit margin, making it a steady revenue contributor. Consider bundling strategies to increase volume sales.
 
+3.**- Which products generate the highest sales but have low profitability, and which products have high profitability despite lower sales?**
 
+   This is the query used to retrieve that information:
 
+ ![kpi_query](./2_visuals/05_query_product_performance.png)
+
+    This is the chart used in Tableau:
+
+ ![kpi_tableau](./2_visuals/06_product_performance.png)
+
+**Insights**
+1.	Best Performing Product: The Canon imageCLASS 2200 Advanced Copier generated the highest profit ($15,679.96) and had the highest total sales ($35,699.90), confirming its strong market demand and profitability.
+2.	Other High-Profit Products: The Hewlett Packard LaserJet 3310 Copier and the GBC DocuBind TL300 Electric Binding System were also profitable, but at a lower scale, with profits of $3,623.94 and $1,910.59, respectively.
+3.	Binding Machines Show Consistent Performance: Both the Fellowes PB300 Plastic Comb Binding Machine and the GBC DocuBind TL300 showed decent profitability, indicating a stable demand in office supplies.
+4.	Canon's Strong Presence: Two Canon copier models made it to the top five in terms of profitability, suggesting the brand's strong reputation and customer trust in this segment.
    
+**Recommendations**
+1.	Invest More in Canon Copiers: The Canon imageCLASS 2200 is highly profitable, making it a strong candidate for increased inventory and targeted marketing campaigns.
+2.	Expand Sales of Binding Machines: Since both binding machines performed well, exploring bundle deals or volume discounts could further boost sales.
+3.	Analyze Lower-Performing Products: Products with high sales but low profitability should be evaluated to understand cost inefficiencies or pricing strategy issues.
+4.	Leverage Brand Loyalty for Future Sales: The success of Canon products suggests an opportunity to introduce and promote newer models under this brand.
 
+4.**- How did sales trends evolve month by month in 2023?**
+
+   This is the query used to retrieve that information:
+
+ ![kpi_query](./2_visuals/07_query_sales_trends.png)
+
+ This is the chart used in Tableau:
+
+ ![kpi_tableau](./2_visuals/08_monthly_trend_sales.png)
+
+**Insights**
+1.	Overall Sales Growth: Total sales in 2023 increased by 20.36% compared to 2022 ($733,215.26 vs. $609,205.60), indicating a strong upward trend.
+2.	Peak Sales Shifted Earlier: The highest sales month in 2022 was December ($96,999.04), while in 2023, the peak was in November ($118,447.83). This could suggest an earlier holiday shopping season or better Black Friday promotions.
+3.	Slowest Month Improvement: The lowest sales month in 2022 was January ($18,542.49), while in 2023, it was February ($20,301.13). Despite February being the weakest month, it still showed a small improvement over the previous year.
+4.	Holiday Sales Strengthened: The November peak in 2023 outperformed December 2022, suggesting that holiday shopping habits may have shifted earlier.
    
-   
-   
-   - **Total Sales**: $2,297,200.86
-   - **Total Profits**: $286,397.02
-   - **Total Costs**: $2,010,803.84
-   - **Total Quantity Sold**: 37,873 units.
-   - Top-performing subcategories by sales:
-     - **Phones**: $356,702.35 in sales with a profit of $46,936.19.
-     - **Chairs**: $330,891.13 in sales with a profit of $26,707.65.
-     - **Storage**: $224,958.56 in sales with a profit of $21,408.70.
+**Recommendations**
+1.	Capitalize on Early Holiday Demand: Since November had the highest sales in 2023, businesses should start holiday promotions earlier and optimize Black Friday/Cyber Monday campaigns.
+2.	Address Post-Holiday Slumps: January and February continue to be the slowest months. Implement off-season discounts or targeted marketing efforts to boost Q1 sales.
+3.	Monitor Trends for Further Shifts: If this earlier peak continues, adjust inventory planning and marketing budgets accordingly to maximize revenue.
+4.	Investigate the Factors Behind the Growth: The 20.36% overall increase is positive, but understanding whether it was due to higher pricing, increased demand, or better promotions will help refine future strategies.
 
-5. **Regional Trends**:
-   - **Top 3 States by Sales**:
-     - **California**: $465,333.76 with a profit of $77,842.74.
-     - **New York**: $310,876.27 with a profit of $74,038.55.
-     - **Texas**: $170,188.05 but incurred a loss of $25,729.36.
 
-6. **Customer Insights**:
-   - Top 10 customers by profit:
-     - **Tamara Chand**: $8,981.32.
-     - **Raymond Buch**: $6,976.10.
-     - **Sanjit Chand**: $5,757.41.
-   - Customer loyalty and profitability are concentrated among a few high-performing customers.
 
-7. **Monthly Sales Trends** (Last 3 months of 2023):
-   - **October**: $65,501.16 in sales with $6,572.07 in profit.
-   - **November**: $89,306.24 in sales with $11,141.88 in profit.
-   - **December**: $56,969.20 in sales with $7,413.63 in profit.
 
-## **Recommendations**
-1. **Product Strategy**:
-   - It is recommended to focus on high-performing subcategories like Phones and Chairs to improve profitability.
-   - Address the negative profitability of products like **Storage** by reviewing pricing or cost structures.
 
-2. **Regional Strategy**:
-   - Capitalize on strong sales performance in California and New York through targeted campaigns.
-   - Investigate the loss in Texas to identify operational inefficiencies or pricing issues.
-
-3. **Customer Engagement**:
-   - Prioritize loyalty programs and exclusive offers for top customers like **Tamara Chand** and **Raymond Buch**.
-   - Expand customer engagement efforts to underperforming regions or segments to balance sales distribution.
-
-4. **Operational Improvements**:
-   - Optimize inventory and shipping processes in states like Texas to reduce losses.
-   - Use monthly sales trends to prepare for peak periods, especially in November, which shows strong sales and profitability.
 
 ## **Project Resources**
 - [Visuals](./visuals) - Folder containing screenshots of Tableau dashboards.

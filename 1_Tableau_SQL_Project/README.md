@@ -209,6 +209,7 @@ o	Furniture had the weakest performance with a total profit of $3,347.90, signif
 2.	Second Class as a Secondary Option: Second Class shipping was the second most popular with 657 orders, which is significantly lower than Standard Class.
 3.	Expedited Shipping Usage: First Class was used 572 times, showing a preference for slightly faster delivery when necessary.
 4.	Least Used Method – Same Day Shipping: Only 186 orders were shipped using Same Day service, indicating either high costs or low demand for immediate deliveries.
+   
 **Recommendations**
 1.	Optimize Standard Class Logistics: Since Standard Class is the most chosen option, ensuring cost-effectiveness and delivery reliability will improve customer satisfaction.
 2.	Encourage Faster Shipping Options: If Same Day shipping has low adoption, consider promotional discounts or bundling faster shipping with premium services.
@@ -229,6 +230,7 @@ o	Furniture had the weakest performance with a total profit of $3,347.90, signif
 2.	New York as the Second Best Performer: With $93,922.99 in sales, New York is significantly behind California but still a strong market.
 3.	Washington in a Solid Third Position: $65,539.90 in sales suggests Washington has strong demand but lags behind the top two states.
 4.	Texas and Pennsylvania are Competitive: Texas ($43,421.76) and Pennsylvania ($42,688.31) have close sales figures, indicating they are strong mid-tier performers.
+   
 **Recommendations**
 1.	Expand Marketing and Inventory in California & New York: Given their high sales volumes, increasing targeted promotions and localized inventory in these states can maximize revenue.
 2.	Leverage Growth in Washington: With $65,539.90 in sales, Washington is a growing market that may benefit from increased marketing efforts.
@@ -249,6 +251,7 @@ This is the query used to retrieve that information:
 1.	Consumers Drive the Highest Sales: The Consumer segment generated $331,904.70, making it the largest revenue contributor.
 2.	Corporate Segment Holds a Strong Position: Corporate customers accounted for $241,847.82 in sales, indicating significant B2B demand.
 3.	Home Office Segment is the Smallest: With $159,462.73 in sales, Home Office customers contribute the least but still represent a considerable market share.
+   
 **Recommendations**
 1.	Enhance Marketing for Consumers: Since they generate the most revenue, targeted discount campaigns, personalized promotions, and loyalty programs can further increase sales.
 2.	Leverage Corporate Accounts for Higher-Value Deals: The Corporate segment is strong, so focusing on bulk orders, long-term contracts, or business partnerships could improve sales efficiency.
@@ -267,6 +270,7 @@ This is the query used to retrieve that information:
 1.	Most Customers Placed 1-2 Orders: The highest concentration of customers placed either 1 or 2 orders, with 96 customers ordering once and 107 ordering twice.
 2.	Steady Distribution in 3-5 Orders Range: Around 80+ customers placed between 3 and 5 orders, indicating a solid mid-tier group of repeat buyers.
 3.	Potential for Retargeting: Since the majority of customers placed 5 or fewer orders, there’s an opportunity to increase retention and order frequency through targeted campaigns.
+   
 **Recommendations**
 1.	Encourage Single-Order Customers to Return: Offer personalized promotions or post-purchase follow-ups to those who only ordered once.
 2.	Leverage the 3-5 Order Group for Loyalty Programs: Customers in this range have shown consistent engagement—introducing loyalty points or incentives could push them toward higher frequency.

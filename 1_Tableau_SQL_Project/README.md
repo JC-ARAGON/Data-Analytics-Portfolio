@@ -85,21 +85,21 @@ This dashboard focuses on customer insights:
    
    This is the query used to retrieve that information:
    
-   ![kpi_query](./2_visuals/kpi_query.png)
+   ![kpi_query](./2_visuals/03_kpi_query.png)
    
    This is the chart used in Tableau:
    
-   ![kpi_tableau](./2_visuals/kpi_tableau_visual.png)
+   ![kpi_tableau](./2_visuals/04_kpi_tableau_visual.png)
 
 2. **Which subcategories had the highest and lowest sales, costs, and profits in 2023?**
 
    This is the query used to retrieve that information:
 
-   ![kpi_query](./2_visuals/kpi_query.png)
+   ![kpi_query](./2_visuals/05_query_product_performance.png)
 
    This is the chart used in Tableau:
 
-    ![kpi_tableau](./2_visuals/sales_costs_profits_subcategory.png)
+    ![kpi_tableau](./2_visuals/06_product_performance.png)
 
 **Insights**
 1.	Most Profitable Subcategory: Copiers had the highest total profit of $25,031.79, despite having lower total sales ($62,899.39) compared to Phones.

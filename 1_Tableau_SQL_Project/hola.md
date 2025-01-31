@@ -4,7 +4,7 @@
 This document outlines the **data cleaning process** applied to the `CovidDeaths` and `CovidVaccinations` datasets before conducting further analysis.
 
 ## 📝 **Why Data Cleaning?**
-Real-world datasets often contain **missing, incorrect, or inconsistent data**. Cleaning the data ensures:
+Cleaning **missing, incorrect, or inconsistent data** ensures:
 - More accurate analysis
 - Fewer SQL errors due to incorrect data types
 - Better performance in queries and reports                           ```sql
@@ -28,7 +28,7 @@ ALTER COLUMN total_vaccinations BIGINT;
 Why?
 These columns were stored as NVARCHAR, causing SQL errors. Converting them to BIGINT ensures correct calculations.
 
-### 🔍 2. Handling NULL Values in Key Metrics
+### 🔍 2. Handling NULL Values in Key Columns
 ```sql
 UPDATE CovidDeaths
 SET total_cases = 0

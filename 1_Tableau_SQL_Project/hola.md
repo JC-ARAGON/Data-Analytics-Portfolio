@@ -18,6 +18,6 @@ WHERE iso_code IN ('OWID_INT', 'OWID_CYN');
 
 DELETE FROM CovidVaccinations
 WHERE iso_code IN ('OWID_INT', 'OWID_CYN');
-
-Why?
+```
+**Why?**
 These codes (OWID_INT, OWID_CYN) represent non-country entities (e.g., international reports) and should be removed for country-level analysis.

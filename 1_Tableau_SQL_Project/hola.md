@@ -11,7 +11,7 @@ Real-world datasets often contain **missing, incorrect, or inconsistent data**. 
 
 ---
 
-###🔍 1. Converting Data Types for Numerical Columns
+### 🔍 1. Converting Data Types for Numerical Columns
 ```sql
 ALTER TABLE CovidDeaths
 ALTER COLUMN total_cases BIGINT;
@@ -28,7 +28,7 @@ ALTER COLUMN total_vaccinations BIGINT;
 Why?
 These columns were stored as NVARCHAR, causing SQL errors. Converting them to BIGINT ensures correct calculations.
 
-###🔍 2. Handling NULL Values in Key Metrics
+### 🔍 2. Handling NULL Values in Key Metrics
 ```sql
 UPDATE CovidDeaths
 SET total_cases = 0
@@ -49,7 +49,7 @@ WHERE total_vaccinations IS NULL;
 Why?
 A NULL value in numerical columns may mean "no data reported" rather than "no cases/tests". We replace NULL with 0 to prevent incorrect results in analysis.
 
-###🔍 3. Removing Records Where continent is NULL
+### 🔍 3. Removing Records Where continent is NULL
 ```sql
 DELETE FROM CovidDeaths
 WHERE continent IS NULL;

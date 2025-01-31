@@ -11,9 +11,9 @@ ORDER BY Total_Sales DESC;
 
 -- This query calculates total sales for each customer segment in 2023.
 SELECT 
-    o.Segment,
-    SUM(o.Sales) AS Total_Sales
-FROM Orders o
+    Segment,
+    SUM(Sales) AS Total_Sales
+FROM Orders 
 WHERE YEAR(o.Order_Date) = 2023
 GROUP BY o.Segment
 ORDER BY Total_Sales DESC;
@@ -25,11 +25,11 @@ SELECT
     COUNT(Customer_ID) AS Number_of_Customers
 FROM (
     SELECT 
-        o.Customer_ID,
+        Customer_ID,
         COUNT(o.Order_ID) AS Order_Count
-    FROM Orders o
-    WHERE YEAR(o.Order_Date) = 2023
-    GROUP BY o.Customer_ID
+    FROM Orders 
+    WHERE YEAR(Order_Date) = 2023
+    GROUP BY Customer_ID
 ) OrderFrequency
 GROUP BY Order_Count
 ORDER BY Order_Count;

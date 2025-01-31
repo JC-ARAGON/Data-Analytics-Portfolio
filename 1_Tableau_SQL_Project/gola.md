@@ -21,13 +21,13 @@ WHERE iso_code IN ('OWID_INT', 'OWID_CYN');
 
 DELETE FROM CovidVaccinations
 WHERE iso_code IN ('OWID_INT', 'OWID_CYN');
+
 Why?
 These codes (OWID_INT, OWID_CYN) represent non-country entities (e.g., international reports) and should be removed for country-level analysis.
 
-🔍 2. Filling Missing population Values
-sql
-Copy
-Edit
+## 🔍 **2. Filling Missing population Values**
+```sql
+
 UPDATE d
 SET d.population = p.population
 FROM CovidDeaths d
@@ -53,9 +53,8 @@ Why?
 Some rows have NULL in population. We replace them with the most recent known population value for the same country.
 
 🔍 3. Converting Data Types for Numerical Columns
-sql
-Copy
-Edit
+```sql
+
 ALTER TABLE CovidDeaths
 ALTER COLUMN total_cases BIGINT;
 
@@ -71,9 +70,8 @@ Why?
 These columns were stored as NVARCHAR, causing SQL errors. Converting them to BIGINT ensures correct calculations.
 
 🔍 4. Handling NULL Values in Key Metrics
-sql
-Copy
-Edit
+```sql
+
 UPDATE CovidDeaths
 SET total_cases = 0
 WHERE total_cases IS NULL;
@@ -93,9 +91,8 @@ Why?
 A NULL value in numerical columns may mean "no data reported" rather than "no cases/tests". We replace NULL with 0 to prevent incorrect results in analysis.
 
 🔍 5. Keeping new_vaccinations for Trend Analysis
-sql
-Copy
-Edit
+```sql
+
 UPDATE CovidVaccinations
 SET new_vaccinations = 0
 WHERE new_vaccinations IS NULL;
@@ -103,9 +100,8 @@ Why?
 Unlike other vaccination columns, new_vaccinations is useful for tracking daily vaccination trends. We replace NULL with 0 for consistency.
 
 🔍 6. (Optional) Removing Records Where continent is NULL
-sql
-Copy
-Edit
+```sql
+
 DELETE FROM CovidDeaths
 WHERE continent IS NULL;
 
@@ -117,9 +113,8 @@ Records with continent IS NULL represent aggregated data (e.g., "World", "High-i
 ✅ Final Check
 After cleaning, run this query to ensure there are no remaining issues:
 
-sql
-Copy
-Edit
+```sql
+
 SELECT * FROM CovidDeaths WHERE population IS NULL;
 SELECT * FROM CovidVaccinations WHERE new_vaccinations IS NULL;
 If these return zero rows, the cleaning process was successful! 🎯

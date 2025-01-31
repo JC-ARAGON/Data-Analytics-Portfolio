@@ -36,7 +36,7 @@ The primary goals of this project are:
 - **Tableau**: For creating interactive dashboards and visualizations.
 
 ## **Dashboards** 
-Remember that you can interact with the dashboards at [this link](https://public.tableau.com/app/profile/juan.cruz.aragon/vizzes).
+Remember that you can interact with the dashboards at [this link][(https://public.tableau.com/app/profile/juan.cruz.aragon/vizzes)](https://public.tableau.com/app/profile/juan.cruz.aragon/viz/Sales_Dashboard_17373604075770/SalesDashboard).
 
 ### **Sales Dashboard**
 This dashboard provides insights into overall sales performance:

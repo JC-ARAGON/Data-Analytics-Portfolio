@@ -74,7 +74,7 @@ DROP COLUMN people_fully_vaccinated, people_fully_vaccinated_per_hundred,
              total_vaccinations_per_hundred;
 ```
 **Why?**
-Some columns contain too many missing values (85% or more). If you don’t need them, removing them helps optimize storage and speed up queries.
+Some columns contained too many missing values (85% or more). Removing them helps optimize storage and speed up queries.
 
 
 

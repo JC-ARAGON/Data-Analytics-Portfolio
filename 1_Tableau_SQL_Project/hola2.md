@@ -19,6 +19,7 @@ SELECT TOP 10
 FROM CovidDeaths
 GROUP BY location
 ORDER BY highest_total_cases DESC;
+```
 🔍 Explanation
 This query:
 

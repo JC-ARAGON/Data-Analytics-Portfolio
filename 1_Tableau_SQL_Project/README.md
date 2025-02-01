@@ -272,7 +272,7 @@ This dashboard focuses on customer insights:
 ### **9. How many customers placed multiple orders in 2023, and what was the most common order frequency?**
 
 #### **Query:**  
-![kpi_query](./2_visuals/17_query_customer_distribution_or.png)
+![kpi_query](./2_visuals/17_query_customer_distribution_orders.png)
 
 #### **Tableau Visualization:**  
 ![kpi_tableau](./2_visuals/18_customer_orders.png)

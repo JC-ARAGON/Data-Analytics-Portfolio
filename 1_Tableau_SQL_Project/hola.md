@@ -1,4 +1,3 @@
-📌 README.md – Data Cleaning for COVID-19 Analysis (SQL Server)
 # 🛠️ Data Cleaning – COVID-19 Analysis (SQL Server)
 
 This document outlines the **data cleaning process** applied to the `CovidDeaths` and `CovidVaccinations` datasets before conducting further analysis.

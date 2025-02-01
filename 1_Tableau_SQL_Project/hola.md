@@ -60,6 +60,22 @@ WHERE continent IS NULL;
 **Why?**
 Records with continent IS NULL represent aggregated data (e.g., "World", "High-income countries"). If focusing only on countries, these records can be removed.
 
+### 🔍 4. Removing Highly Incomplete Columns 
+```sql
+ALTER TABLE CovidDeaths
+DROP COLUMN icu_patients, icu_patients_per_million, 
+             hosp_patients, hosp_patients_per_million, 
+             weekly_icu_admissions, weekly_icu_admissions_per_million, 
+             weekly_hosp_admissions, weekly_hosp_admissions_per_million;
+
+ALTER TABLE CovidVaccinations
+DROP COLUMN people_fully_vaccinated, people_fully_vaccinated_per_hundred, 
+             people_vaccinated, people_vaccinated_per_hundred, 
+             total_vaccinations_per_hundred;
+```
+**Why?**
+Some columns contain too many missing values (85% or more). If you don’t need them, removing them helps optimize storage and speed up queries.
+
 
 
 

@@ -1,3 +1,24 @@
+
+Got it! Here's the correctly formatted section for README.md, including titles, horizontal dividers, bullet points, and proper markdown structure for GitHub compatibility.
+
+md
+Copy
+Edit
+# 🌍 Top 10 Countries with the Highest COVID-19 Cases
+
+## 📌 Query Overview  
+This query retrieves the **top 10 countries with the highest reported COVID-19 cases**, along with their total deaths and death rates.
+
+## 🖥️ SQL Query  
+```sql
+SELECT TOP 10
+    location,
+    MAX(total_cases) AS highest_total_cases,
+    MAX(total_deaths) AS highest_total_deaths,
+    (MAX(total_deaths) * 100.0 / NULLIF(MAX(total_cases), 0)) AS death_rate
+FROM CovidDeaths
+GROUP BY location
+ORDER BY highest_total_cases DESC;
 🔍 Explanation
 This query:
 

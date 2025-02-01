@@ -68,3 +68,26 @@ ORDER BY highest_total_cases DESC;
 ### 📊 Insights
 - The United States, India, and Brazil rank among the top three countries with the highest reported cases, mainly due to large populations and extensive testing capacity.
 - Death rates vary significantly across countries, reflecting differences in healthcare quality, early intervention strategies, and vaccination rates.
+
+  
+## 📌 Query 4: This query ranks countries based on **COVID-19 death rates**, allowing for a comparison of **mortality impact** across nations.
+
+## 🖥️ SQL Query  
+```sql
+WITH CountryDeathRates AS (
+    SELECT 
+        location,
+        MAX(total_cases) AS highest_total_cases,
+        MAX(total_deaths) AS highest_total_deaths,
+        (MAX(total_deaths) * 100.0 / NULLIF(MAX(total_cases), 0)) AS death_rate
+    FROM CovidDeaths
+    GROUP BY location
+)
+SELECT 
+    location, 
+    highest_total_cases,
+    highest_total_deaths,
+    death_rate,
+    RANK() OVER (ORDER BY death_rate DESC) AS death_rate_rank
+FROM CountryDeathRates;
+

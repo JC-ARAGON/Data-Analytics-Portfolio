@@ -69,10 +69,9 @@ ORDER BY highest_total_cases DESC;
 - The United States, India, and Brazil rank among the top three countries with the highest reported cases, mainly due to large populations and extensive testing capacity.
 - Death rates vary significantly across countries, reflecting differences in healthcare quality, early intervention strategies, and vaccination rates.
 
-  
-## 📌 Query 4: This query ranks countries based on **COVID-19 death rates**, allowing for a comparison of **mortality impact** across nations.
+## 📌 Query 4: Ranking Countries by COVID-19 Death Rate  
+This query ranks countries based on **COVID-19 death rates**, allowing for a comparison of **mortality impact** across nations.
 
-## 🖥️ SQL Query  
 ```sql
 WITH CountryDeathRates AS (
     SELECT 
@@ -90,4 +89,43 @@ SELECT
     death_rate,
     RANK() OVER (ORDER BY death_rate DESC) AS death_rate_rank
 FROM CountryDeathRates;
+```
+### 🔍 Explanation
+This query:
 
+- Uses a Common Table Expression (CTE) (CountryDeathRates) to calculate:
+Highest recorded total cases and deaths per country.
+Death rate as (total_deaths / total_cases) * 100.
+- Applies RANK() OVER (ORDER BY death_rate DESC) to rank countries based on their COVID-19 death rates.
+- Countries with higher death rates receive lower numerical ranks (i.e., 1 is the highest death rate).
+### 📊 Insights
+- Countries like Peru, Mexico, and some Eastern European nations rank highest in death rates (~8-10%), likely due to healthcare system strain and underreported cases.
+- Developed nations with advanced medical infrastructure (e.g., Germany, Canada) rank lower (~1-2%), demonstrating the effectiveness of medical response and vaccination campaigns.
+  
+
+## 📌 Query 5: Countries with the Highest Infection Rate (Percentage of Population Infected) 
+This query identifies **countries where more than 10% of the population was infected with COVID-19**, highlighting the most affected nations relative to their population size.
+
+```sql
+SELECT 
+    location,
+    MAX(population) AS total_population,
+    MAX(total_cases) AS highest_total_cases,
+    (MAX(total_cases) * 100.0 / NULLIF(MAX(population), 0)) AS infection_rate
+FROM CovidDeaths
+GROUP BY location
+HAVING (MAX(total_cases) * 100.0 / NULLIF(MAX(population), 0)) > 10
+ORDER BY infection_rate DESC;
+```
+### 🔍 Explanation
+This query:
+
+1. Groups data by country (location) and retrieves:
+- The total population (MAX(population)).
+- The highest recorded number of total cases (MAX(total_cases)).
+- The infection rate, calculated as (total_cases / population) * 100.
+2. Uses HAVING to filter out countries with an infection rate below 10%, focusing only on those heavily impacted.
+3. Orders results by infection_rate in descending order, showing the hardest-hit countries first
+### 📊 Insights
+- Some smaller countries (e.g., Andorra, Montenegro, San Marino) show infection rates above 15%, likely due to high population density and testing efforts.
+- Larger nations (e.g., the United States, Brazil, and India) show high total cases but lower infection rates, since their large populations dilute the percentage.

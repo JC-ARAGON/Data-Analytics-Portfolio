@@ -146,11 +146,159 @@ ORDER BY deaths_per_million DESC;
 ### 🔍 Explanation
 This query:
 
-- Groups data by country (location) and retrieves:
-Total population (MAX(population)).
-Highest recorded total deaths (MAX(total_deaths)).
+1. Groups data by country (location) and retrieves:
+- Total population (MAX(population)).
+- Highest recorded total deaths (MAX(total_deaths)).
 - Deaths per million people, calculated as (total_deaths / population) * 1,000,000, which allows for fair comparisons between countries of different sizes.
-- Orders results by deaths_per_million in descending order, displaying the hardest-hit nations first.
+2. Orders results by deaths_per_million in descending order, displaying the hardest-hit nations first.
 ### 📊 Insights
--Peru, Belgium, and Italy have some of the highest deaths per million, reflecting severe outbreaks and healthcare system strain.
+- Peru, Belgium, and Italy have some of the highest deaths per million, reflecting severe outbreaks and healthcare system strain.
 - Larger countries like India and China have lower deaths per million, despite high total deaths, due to large populations diluting the per capita impact.
+
+
+## 📌 Query 7: COVID-19 Vaccination Coverage by Country
+This query calculates **vaccination coverage per country**, showing the percentage of the population that has received at least one dose.
+  
+```sql
+SELECT 
+    v.location,
+    MAX(d.population) AS total_population,
+    MAX(v.total_vaccinations) AS total_vaccinations,
+    (MAX(v.total_vaccinations) * 100.0 / NULLIF(MAX(d.population), 0)) AS vaccination_coverage
+FROM CovidVaccinations v
+JOIN CovidDeaths d 
+    ON v.iso_code = d.iso_code
+    AND v.date = d.date
+GROUP BY v.location
+ORDER BY vaccination_coverage DESC;
+```
+### 🔍 Explanation
+This query:
+
+1. Joins the CovidVaccinations and CovidDeaths tables using iso_code and date to match vaccination data with population statistics.
+2. Retrieves:
+- Total population (MAX(d.population)).
+- Total vaccinations administered (MAX(v.total_vaccinations)).
+- Vaccination coverage, calculated as (total_vaccinations / population) * 100, showing the percentage of the population vaccinated.
+3. Orders results by vaccination_coverage in descending order, displaying countries with the highest vaccination rates first.
+### 📊 Insights
+- Gibraltar and the UAE exceed 100% vaccination coverage, as they include doses administered to non-residents, tourists, and booster doses.
+- Several African and low-income countries have vaccination rates below 10%, highlighting global inequality in vaccine distribution.
+
+
+## 📌 Query 8: Vaccination Rollout by Country 
+This query identifies **the date each country started vaccinating**, the **total number of vaccinations administered**, and **vaccination coverage as a percentage of the population**.
+
+```sql
+WITH VaccineRollout AS (
+    SELECT 
+        v.location,
+        MIN(v.date) AS first_vaccine_date,
+        MAX(TRY_CAST(v.total_vaccinations AS BIGINT)) AS total_vaccinations,
+        MAX(TRY_CAST(d.population AS BIGINT)) AS total_population
+    FROM CovidVaccinations v
+    JOIN CovidDeaths d 
+        ON v.iso_code = d.iso_code
+    WHERE d.continent IS NOT NULL
+    GROUP BY v.location
+)
+SELECT 
+    location,
+    first_vaccine_date,
+    total_vaccinations,
+    (total_vaccinations * 100.0 / NULLIF(total_population, 0)) AS vaccination_coverage
+FROM VaccineRollout
+ORDER BY first_vaccine_date DESC;
+```
+### 🔍 Explanation
+This query:
+
+1. Uses a Common Table Expression (CTE) VaccineRollout to:
+- Identify the earliest recorded vaccination date per country using MIN(v.date).
+- Retrieve the total number of vaccinations administered using MAX(v.total_vaccinations).
+- Extract the latest recorded population using MAX(d.population).
+2. Computes vaccination coverage as (total_vaccinations / total_population) * 100.
+3. Orders results by first_vaccine_date in descending order, displaying the countries that started vaccinating latest first.
+### 📊 Insights
+- Wealthy nations (e.g., the UK, USA, and UAE) started vaccinations as early as December 2020, enabling faster pandemic control.
+- Lower-income countries (e.g., many in Africa) started months later, reflecting vaccine access inequalities and logistical challenges.
+
+ 
+## 📌 Query 9: Countries with Above-Average COVID-19 Death Rates
+This query identifies **countries with a COVID-19 death rate higher than the global average**, helping to highlight nations where the virus had the most severe impact in terms of mortality.
+
+```sql
+WITH CountryDeathRates AS (
+    SELECT 
+        location,
+        MAX(total_cases) AS highest_total_cases,
+        MAX(total_deaths) AS highest_total_deaths,
+        (MAX(total_deaths) * 100.0 / NULLIF(MAX(total_cases), 0)) AS death_rate
+    FROM CovidDeaths
+    WHERE continent IS NOT NULL
+    GROUP BY location
+),
+GlobalAvg AS (
+    SELECT AVG(death_rate) AS avg_death_rate FROM CountryDeathRates
+)
+SELECT 
+    c.location, 
+    c.highest_total_cases, 
+    c.highest_total_deaths, 
+    c.death_rate,
+    (SELECT avg_death_rate FROM GlobalAvg) AS global_avg_death_rate
+FROM CountryDeathRates c
+WHERE c.death_rate > (SELECT avg_death_rate FROM GlobalAvg)
+ORDER BY c.death_rate DESC;
+```
+
+### 🔍 Explanation
+This query:
+
+1. Uses a Common Table Expression (CTE) CountryDeathRates to calculate:
+- The highest recorded total cases and total deaths per country.
+- Death rate as (total_deaths / total_cases) * 100.
+- Uses another CTE (GlobalAvg) to compute the global average death rate across all countries.
+2. Filters out only the countries where the death rate is above the global average.
+3. Orders results by death_rate in descending order, displaying the countries with the highest relative mortality first.
+### 📊 Insights
+- Peru, Mexico, and some Eastern European nations have death rates significantly higher than the global average (~8-10%), likely due to healthcare system strain, late interventions, and underreported cases.
+- Countries with advanced medical infrastructure (e.g., Germany, Canada) tend to have below-average death rates (~1-2%), showcasing the impact of strong healthcare systems and early response measures.
+
+
+## 📌 Query 10: Mortality Rate Over Time in South America  
+This query tracks **the cumulative COVID-19 cases, deaths, and mortality rate over time** for each South American country, allowing for trend analysis of the pandemic's impact.
+
+```sql
+WITH SouthAmericaData AS (
+    SELECT 
+        location,
+        date,
+        total_cases,
+        total_deaths,
+        SUM(total_cases) OVER (PARTITION BY location ORDER BY date) AS cumulative_cases,
+        SUM(total_deaths) OVER (PARTITION BY location ORDER BY date) AS cumulative_deaths
+    FROM CovidDeaths 
+    WHERE continent = 'South America'
+)
+SELECT 
+    location,
+    date,
+    cumulative_cases,
+    cumulative_deaths,
+    (cumulative_deaths * 100.0 / NULLIF(cumulative_cases, 0)) AS mortality_rate
+FROM SouthAmericaData
+ORDER BY location, date;
+```
+### 🔍 Explanation
+This query:
+
+1. Uses a Common Table Expression (CTE) SouthAmericaData to calculate:
+- Cumulative cases and deaths per country over time using SUM() OVER (PARTITION BY location ORDER BY date).
+- Daily total cases and deaths, keeping track of the progression of the pandemic.
+2. Computes the mortality rate as (cumulative_deaths / cumulative_cases) * 100, which helps measure how lethal the virus was in each country over time.
+3. Filters only South American countries (WHERE continent = 'South America') to focus on a regional analysis.
+4. Orders results by location and date, displaying the progression of cases and deaths chronologically.
+### 📊 Insights
+- Early in the pandemic, mortality rates were much higher (~5%), especially in countries like Ecuador and Peru, due to limited medical resources and overwhelmed hospitals.
+- As vaccinations increased in 2021, mortality rates gradually declined below 2%, reflecting improved treatments and widespread immunization.

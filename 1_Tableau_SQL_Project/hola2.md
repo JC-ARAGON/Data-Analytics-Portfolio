@@ -129,3 +129,28 @@ This query:
 ### 📊 Insights
 - Some smaller countries (e.g., Andorra, Montenegro, San Marino) show infection rates above 15%, likely due to high population density and testing efforts.
 - Larger nations (e.g., the United States, Brazil, and India) show high total cases but lower infection rates, since their large populations dilute the percentage.
+
+
+## 📌 Query 6: Countries with the Highest COVID-19 Deaths per Million People
+
+```sql
+SELECT 
+    location,
+    MAX(population) AS total_population,
+    MAX(total_deaths) AS highest_total_deaths,
+    (MAX(total_deaths) * 1000000.0 / NULLIF(MAX(population), 0)) AS deaths_per_million
+FROM CovidDeaths
+GROUP BY location
+ORDER BY deaths_per_million DESC;
+```
+### 🔍 Explanation
+This query:
+
+- Groups data by country (location) and retrieves:
+Total population (MAX(population)).
+Highest recorded total deaths (MAX(total_deaths)).
+- Deaths per million people, calculated as (total_deaths / population) * 1,000,000, which allows for fair comparisons between countries of different sizes.
+- Orders results by deaths_per_million in descending order, displaying the hardest-hit nations first.
+### 📊 Insights
+-Peru, Belgium, and Italy have some of the highest deaths per million, reflecting severe outbreaks and healthcare system strain.
+- Larger countries like India and China have lower deaths per million, despite high total deaths, due to large populations diluting the per capita impact.

@@ -1,6 +1,9 @@
 # Data Analysis Portfolio
 Data Analytics Portfolio: SQL, Tableau and Python Projects
 
+Hello!
+I am Juan Cruz, a graduate in Business Administration. A self-taught and naturally curious individual, I have developed expertise in tools such as SQL, Excel, Tableau, Power BI, and Python, utilizing libraries like Pandas and Matplotlib through specialized courses. Passionate about learning and applying knowledge, I am driven by the opportunity to contribute and make a meaningful impact through my work.
+
 This is my portfolio of data analysis projects, showcasing my skills in SQL, Python, and Tableau for data cleaning, analysis, and visualization.
 
 ## Repository Content

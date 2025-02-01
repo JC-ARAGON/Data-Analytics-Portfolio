@@ -7,7 +7,7 @@ This document outlines the **data cleaning process** applied to the `CovidDeaths
 Cleaning **missing, incorrect, or inconsistent data** ensures:
 - More accurate analysis
 - Fewer SQL errors due to incorrect data types
-- Better performance in queries and reports                           ```sql
+- Better performance in queries and reports                          
 
 ---
 
@@ -25,7 +25,7 @@ ALTER COLUMN total_tests BIGINT;
 ALTER TABLE CovidVaccinations
 ALTER COLUMN total_vaccinations BIGINT;
 ```
-Why?
+**Why?**
 These columns were stored as NVARCHAR, causing SQL errors. Converting them to BIGINT ensures correct calculations.
 
 ### 🔍 2. Handling NULL Values in Key Columns
@@ -46,7 +46,7 @@ UPDATE CovidVaccinations
 SET total_vaccinations = 0
 WHERE total_vaccinations IS NULL;
 ```
-Why?
+**Why?**
 A NULL value in numerical columns may mean "no data reported" rather than "no cases/tests". We replace NULL with 0 to prevent incorrect results in analysis.
 
 ### 🔍 3. Removing Records Where continent is NULL
@@ -57,7 +57,7 @@ WHERE continent IS NULL;
 DELETE FROM CovidVaccinations
 WHERE continent IS NULL;
 ```
-Why?
+**Why?**
 Records with continent IS NULL represent aggregated data (e.g., "World", "High-income countries"). If focusing only on countries, these records can be removed.
 
 

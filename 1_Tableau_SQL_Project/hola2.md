@@ -199,7 +199,6 @@ WITH VaccineRollout AS (
     FROM CovidVaccinations v
     JOIN CovidDeaths d 
         ON v.iso_code = d.iso_code
-    WHERE d.continent IS NOT NULL
     GROUP BY v.location
 )
 SELECT 

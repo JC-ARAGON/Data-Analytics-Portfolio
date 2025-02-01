@@ -22,7 +22,7 @@ ORDER BY highest_total_cases DESC;
 
 - The United States, India, and Brazil rank among the top three countries with the highest reported cases, mainly due to large populations and extensive testing capacity.
 - Death rates vary significantly across countries, reflecting differences in healthcare quality, early intervention strategies, and vaccination rates.
-
+---
   
 ## Query 2: Average Daily COVID-19 Cases and Deaths by Continent
 
@@ -45,7 +45,7 @@ ORDER BY avg_daily_cases DESC;
 ### 📊 Insights
 - Europe and the Americas report the highest average daily cases, largely due to higher testing rates, larger populations, and multiple outbreak waves.
 - Africa shows a higher death rate compared to cases, likely due to underreporting, limited healthcare resources, and lower testing availability.
-  
+---  
 
 ## Query 3: **highest recorded total cases and deaths for each country**
 
@@ -68,6 +68,7 @@ ORDER BY highest_total_cases DESC;
 ### 📊 Insights
 - The United States, India, and Brazil rank among the top three countries with the highest reported cases, mainly due to large populations and extensive testing capacity.
 - Death rates vary significantly across countries, reflecting differences in healthcare quality, early intervention strategies, and vaccination rates.
+---
 
 ## Query 4: Ranking Countries by COVID-19 Death Rate  
 This query ranks countries based on **COVID-19 death rates**, allowing for a comparison of **mortality impact** across nations.
@@ -101,7 +102,7 @@ Death rate as (total_deaths / total_cases) * 100.
 ### 📊 Insights
 - Countries like Peru, Mexico, and some Eastern European nations rank highest in death rates (~8-10%), likely due to healthcare system strain and underreported cases.
 - Developed nations with advanced medical infrastructure (e.g., Germany, Canada) rank lower (~1-2%), demonstrating the effectiveness of medical response and vaccination campaigns.
-  
+---  
 
 ## Query 5: Countries with the Highest Infection Rate (Percentage of Population Infected) 
 This query identifies **countries where more than 10% of the population was infected with COVID-19**, highlighting the most affected nations relative to their population size.
@@ -129,7 +130,7 @@ This query:
 ### 📊 Insights
 - Some smaller countries (e.g., Andorra, Montenegro, San Marino) show infection rates above 15%, likely due to high population density and testing efforts.
 - Larger nations (e.g., the United States, Brazil, and India) show high total cases but lower infection rates, since their large populations dilute the percentage.
-
+---
 
 ## Query 6: Countries with the Highest COVID-19 Deaths per Million People
 
@@ -154,7 +155,7 @@ This query:
 ### 📊 Insights
 - Peru, Belgium, and Italy have some of the highest deaths per million, reflecting severe outbreaks and healthcare system strain.
 - Larger countries like India and China have lower deaths per million, despite high total deaths, due to large populations diluting the per capita impact.
-
+---
 
 ## Query 7: COVID-19 Vaccination Coverage by Country
 This query calculates **vaccination coverage per country**, showing the percentage of the population that has received at least one dose.
@@ -184,7 +185,7 @@ This query:
 ### 📊 Insights
 - Gibraltar and the UAE exceed 100% vaccination coverage, as they include doses administered to non-residents, tourists, and booster doses.
 - Several African and low-income countries have vaccination rates below 10%, highlighting global inequality in vaccine distribution.
-
+---
 
 ## Query 8: Vaccination Rollout by Country 
 This query identifies **the date each country started vaccinating**, the **total number of vaccinations administered**, and **vaccination coverage as a percentage of the population**.
@@ -221,7 +222,7 @@ This query:
 ### 📊 Insights
 - Wealthy nations (e.g., the UK, USA, and UAE) started vaccinations as early as December 2020, enabling faster pandemic control.
 - Lower-income countries (e.g., many in Africa) started months later, reflecting vaccine access inequalities and logistical challenges.
-
+---
  
 ## Query 9: Countries with Above-Average COVID-19 Death Rates
 This query identifies **countries with a COVID-19 death rate higher than the global average**, helping to highlight nations where the virus had the most severe impact in terms of mortality.

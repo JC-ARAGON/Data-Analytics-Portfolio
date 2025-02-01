@@ -1,5 +1,5 @@
 # Data Analysis Portfolio
-Data Analytics Portfolio: SQL, Tableau and Python Projects
+### SQL, Tableau and Python Projects
 
 Hello!
 

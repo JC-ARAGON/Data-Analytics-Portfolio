@@ -15,11 +15,12 @@ To ensure **data integrity and consistency**, a **Data Cleaning** process was pe
 
 📌 **To access the script, follow these steps:**   
 1. Open the file **[Data_Cleaning.md](Data_Cleaning.md)** to view the cleaning steps applied.  
-2. This script includes:  
-   - Handling **missing values** in population and vaccination data.   
-   - Replacing NULLs in key numerical fields with **zero** where appropriate.
-   - Removing Highly Incomplete Columns
-   - Removing Records Where continent is NULL
+2. This script includes:
+   - **Converting Data Types for Numerical Columns.**
+   - **Handling missing values in population and vaccination data.**   
+   - **Replacing NULLS in key numerical fields with **zero** where appropriate.**
+   - **Removing Highly Incomplete Columns.**
+   - **Removing Records Where continent is NULL.**
 
 
 

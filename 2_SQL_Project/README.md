@@ -13,12 +13,10 @@ The dataset comes from [Our World in Data](https://ourworldindata.org/coronaviru
 ## 📂 Accessing the Data Cleaning Script  
 To ensure **data integrity and consistency**, a **Data Cleaning** process was performed before analysis.  
 
-📌 **To access the script, follow these steps:**  
-1. Navigate to the `scripts/` directory in this repository.  
-2. Open the file **`data_cleaning.sql`** to view the cleaning steps applied.  
-3. This script includes:  
-   - Handling **missing values** in population and vaccination data.  
-   - Filtering out **invalid country codes** (e.g., aggregated global statistics).  
+📌 **To access the script, follow these steps:**   
+1. Open the file **`data_cleaning.sql`** to view the cleaning steps applied.  
+2. This script includes:  
+   - Handling **missing values** in population and vaccination data.   
    - Replacing NULLs in key numerical fields with **zero** where appropriate.  
 
 📌 **Run the script in your SQL environment before performing any analysis** to ensure you work with a **clean and structured dataset**.  
@@ -28,10 +26,9 @@ To ensure **data integrity and consistency**, a **Data Cleaning** process was pe
 ## 📂 Accessing the Data Exploration Script  
 After cleaning the data, **exploratory analysis** was conducted to uncover trends in **cases, deaths, and vaccinations**.  
 
-📌 **To access the script, follow these steps:**  
-1. Navigate to the `scripts/` directory in this repository.  
-2. Open the file **`data_exploration.sql`** to view the queries used for analysis.  
-3. This script includes:  
+📌 **To access the script, follow these steps:**    
+1. Open the file **`data_exploration.sql`** to view the queries used for analysis.  
+2. This script includes:  
    - **Global COVID-19 case and death trends**.  
    - **Vaccination coverage and rollout timing** by country.  
    - **Mortality rate analysis using window functions and CTEs**.  

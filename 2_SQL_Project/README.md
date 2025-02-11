@@ -14,7 +14,7 @@ The dataset comes from [Our World in Data](https://ourworldindata.org/coronaviru
 To ensure **data integrity and consistency**, a **Data Cleaning** process was performed before analysis.  
 
 📌 **To access the script, follow these steps:**   
-1. Open the file **`data_cleaning.sql`** to view the cleaning steps applied.  
+1. Open the file **`data_cleaning.sql`- **[Data](.Data_Cleaning.md)** -** to view the cleaning steps applied.  
 2. This script includes:  
    - Handling **missing values** in population and vaccination data.   
    - Replacing NULLs in key numerical fields with **zero** where appropriate.

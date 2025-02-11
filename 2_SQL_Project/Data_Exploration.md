@@ -294,8 +294,8 @@ ORDER BY location, date;
 This query:
 
 1. Uses a Common Table Expression (CTE) SouthAmericaData to calculate:
-    - Cumulative cases and deaths per country over time using SUM() OVER (PARTITION BY location ORDER BY date).
-    - Daily total cases and deaths, keeping track of the progression of the pandemic.
+- Cumulative cases and deaths per country over time using SUM() OVER (PARTITION BY location ORDER BY date).
+- Daily total cases and deaths, keeping track of the progression of the pandemic.
 2. Computes the mortality rate as (cumulative_deaths / cumulative_cases) * 100, which helps measure how lethal the virus was in each country over time.
 3. Filters only South American countries (WHERE continent = 'South America') to focus on a regional analysis.
 4. Orders results by location and date, displaying the progression of cases and deaths chronologically.

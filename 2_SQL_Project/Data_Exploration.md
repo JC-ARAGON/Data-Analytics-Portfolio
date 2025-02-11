@@ -12,6 +12,9 @@ FROM CovidDeaths
 GROUP BY location
 ORDER BY highest_total_cases DESC;
 ```
+
+![query_01.png](./visuals/query_01.png)
+
 ### 🔍 Explanation
 
 - Retrieves the 10 countries with the highest number of total COVID-19 cases.

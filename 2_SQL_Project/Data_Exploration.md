@@ -281,7 +281,7 @@ This query:
 2. Filters out only the countries where the death rate is above the global average.
 3. Orders results by death_rate in descending order, displaying the countries with the highest relative mortality first.
 ### 📊 Insights
-- Peru, Mexico, and some Eastern European nations have death rates significantly higher than the global average (~8-10%), likely due to healthcare system strain, late interventions, and underreported cases.
+- Yemen, Mexico and Syria have death rates significantly higher than the global average (~8-10%), likely due to healthcare system strain, late interventions, and underreported cases.
 - Countries with advanced medical infrastructure (e.g., Germany, Canada) tend to have below-average death rates (~1-2%), showcasing the impact of strong healthcare systems and early response measures.
 ---
 

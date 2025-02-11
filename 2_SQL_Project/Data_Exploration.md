@@ -1,5 +1,15 @@
 # 🌍 Data Exploration – COVID 19 Analysis (SQL Server)
 
+After cleaning the dataset, we performed **exploratory data analysis** to uncover key insights about **COVID-19 cases, deaths, and vaccinations** worldwide.  
+
+In this section, we used 10 **SQL queries** to:  
+- Analyze **global and regional case trends**.  
+- Compare **death rates across countries**.  
+- Measure **vaccination coverage and rollout speed**.  
+- Identify **countries with the highest infection and mortality rates**.  
+
+This analysis helps us understand **how COVID-19 spread over time** and **which factors influenced its impact on different countries**.  
+
 ## Query 1: **top 10 countries with the highest reported COVID-19 cases**
 
 ```sql

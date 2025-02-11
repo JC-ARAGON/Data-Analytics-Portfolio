@@ -14,7 +14,7 @@ The dataset comes from [Our World in Data](https://ourworldindata.org/coronaviru
 To ensure **data integrity and consistency**, a **Data Cleaning** process was performed before analysis.  
 
 📌 **To access the script, follow these steps:**   
-1. Open the file **`data_cleaning.sql`- **[Data](Data_Cleaning.md)** -** to view the cleaning steps applied.  
+1. Open the file - **[Data_Cleaning.md](Data_Cleaning.md)** -** to view the cleaning steps applied.  
 2. This script includes:  
    - Handling **missing values** in population and vaccination data.   
    - Replacing NULLs in key numerical fields with **zero** where appropriate.
@@ -31,7 +31,7 @@ To ensure **data integrity and consistency**, a **Data Cleaning** process was pe
 After cleaning the data, **exploratory analysis** was conducted to uncover trends in **cases, deaths, and vaccinations**.  
 
 📌 **To access the script, follow these steps:**    
-1. Open the file **`data_exploration.sql`** to view the queries used for analysis.  
+1. Open the file - **[Data_Exploration.md](Data_Exploration.md)** -** to view the queries used for analysis.  
 2. This script includes:  
    - **Global COVID-19 case and death trends**.  
    - **Vaccination coverage and rollout timing** by country.  

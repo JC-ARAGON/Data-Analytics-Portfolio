@@ -20,7 +20,7 @@ To ensure **data integrity and consistency**, a **Data Cleaning** process was pe
    - **Handling missing values in population and vaccination data.**   
    - **Replacing NULLS in key numerical fields with **zero** where appropriate.**
    - **Removing Highly Incomplete Columns.**
-   - **Removing Records Where continent is NULL.**
+   - **Removing Records Where Continent is NULL.**
 
 
 

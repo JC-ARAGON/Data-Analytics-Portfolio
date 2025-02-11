@@ -1,7 +1,7 @@
 # 🦠 COVID-19 Data Analysis with SQL  
 
 ## 📌 Project Overview  
-This project analyzes **COVID-19 data using SQL**, focusing on **global and regional trends** in cases, deaths, and vaccinations. The analysis includes:  
+This project analyzes **COVID-19 data using SQL Server**, focusing on **global and regional trends** in cases, deaths, and vaccinations. The analysis includes:  
 - **Data Cleaning:** Handling missing values, removing invalid records, and ensuring data consistency.  
 - **Exploratory Data Analysis (EDA):** Examining case growth, mortality rates, vaccination coverage, and trends over time.  
 - **Advanced SQL Queries:** Using **JOINs, CTEs, window functions, and aggregations** to extract meaningful insights.  
@@ -37,10 +37,8 @@ After cleaning the data, **exploratory analysis** was conducted to uncover trend
    - **Mortality rate analysis using window functions and CTEs**.  
    - **Comparisons of infection rates across continents**.  
 
-📌 **Run these queries in SQL Server to generate insights from the dataset.**  
 
 ---
 
-🔥 **This project showcases SQL skills in real-world data analysis.**  
-📩 **Feel free to contribute, suggest improvements, or use this as a reference for your own projects!**  
+**This project showcases SQL skills in real-world data analysis.** 
 

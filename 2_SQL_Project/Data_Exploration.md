@@ -48,7 +48,7 @@ ORDER BY avg_daily_cases DESC;
 - Orders the results in descending order of total cases, ensuring the most affected countries appear at the top.
 
 ### 📊 Insights
-- Europe and the Americas report the highest average daily cases, largely due to higher testing rates, larger populations, and multiple outbreak waves.
+- South and North America report the highest average daily cases, largely due to higher testing rates, larger populations, and multiple outbreak waves.
 - Africa shows a higher death rate compared to cases, likely due to underreporting, limited healthcare resources, and lower testing availability.
 ---  
 
@@ -154,6 +154,9 @@ FROM CovidDeaths
 GROUP BY location
 ORDER BY deaths_per_million DESC;
 ```
+
+![query_06.png](./visuals/query_06.png)
+
 ### 🔍 Explanation
 This query:
 
@@ -183,6 +186,8 @@ JOIN CovidDeaths d
 GROUP BY v.location
 ORDER BY vaccination_coverage DESC;
 ```
+![query_07.png](./visuals/query_07.png)
+
 ### 🔍 Explanation
 This query:
 
@@ -220,6 +225,9 @@ SELECT
 FROM VaccineRollout
 ORDER BY first_vaccine_date DESC;
 ```
+
+![query_08.png](./visuals/query_08.png)
+
 ### 🔍 Explanation
 This query:
 
@@ -261,6 +269,7 @@ FROM CountryDeathRates c
 WHERE c.death_rate > (SELECT avg_death_rate FROM GlobalAvg)
 ORDER BY c.death_rate DESC;
 ```
+![query_09.png](./visuals/query_09.png)
 
 ### 🔍 Explanation
 This query:
@@ -300,6 +309,8 @@ SELECT
 FROM SouthAmericaData
 ORDER BY location, date;
 ```
+![query_10.png](./visuals/query_10.png)
+
 ### 🔍 Explanation
 This query:
 

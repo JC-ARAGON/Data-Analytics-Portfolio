@@ -39,6 +39,8 @@ FROM CovidDeaths
 GROUP BY continent
 ORDER BY avg_daily_cases DESC;
 ```
+![query_02.png](./visuals/query_02.png)
+
 ### 🔍 Explanation
 - Retrieves the 10 countries with the highest number of total COVID-19 cases.
 - Uses MAX() to obtain the peak total cases and total deaths recorded for each country.
@@ -62,6 +64,7 @@ FROM CovidDeaths
 GROUP BY location
 ORDER BY highest_total_cases DESC;
 ```
+![query_03.png](./visuals/query_03.png)
 ### 🔍 Explanation
 - Retrieves the 10 countries with the highest number of total COVID-19 cases.
 - Uses MAX() to obtain the peak total cases and total deaths recorded for each country.
@@ -94,6 +97,8 @@ SELECT
     RANK() OVER (ORDER BY death_rate DESC) AS death_rate_rank
 FROM CountryDeathRates;
 ```
+![query_04.png](./visuals/query_04.png)
+
 ### 🔍 Explanation
 This query:
 
@@ -121,6 +126,8 @@ GROUP BY location
 HAVING (MAX(total_cases) * 100.0 / NULLIF(MAX(population), 0)) > 10
 ORDER BY infection_rate DESC;
 ```
+![query_05.png](./visuals/query_05.png)
+
 ### 🔍 Explanation
 This query:
 

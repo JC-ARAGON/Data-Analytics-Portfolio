@@ -16,18 +16,6 @@ ALTER TABLE CovidDeaths
 ALTER COLUMN total_cases BIGINT;
 
 ALTER TABLE CovidDeaths
-ALTER COLUMN total_deaths BIGINT;
-
-ALTER TABLE CovidVaccinations
-ALTER COLUMN total_tests BIGINT;
-
-ALTER TABLE CovidVaccinations
-ALTER COLUMN total_vaccinations BIGINT;
-
-ALTER TABLE CovidDeaths
-ALTER COLUMN total_cases BIGINT;
-
-ALTER TABLE CovidDeaths
 ALTER COLUMN new_cases BIGINT;
 
 ALTER TABLE CovidDeaths

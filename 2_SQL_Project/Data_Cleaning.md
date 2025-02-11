@@ -57,7 +57,7 @@ WHERE total_vaccinations IS NULL;
 **Why?**
 A NULL value in numerical columns may mean "no data reported" rather than "no cases/tests". We replace NULL with 0 to prevent incorrect results in analysis.
 
-### 🔍 3. Removing Records Where continent is NULL
+### 🔍 3. Removing Records Where Continent is NULL
 ```sql
 DELETE FROM CovidDeaths
 WHERE continent IS NULL;

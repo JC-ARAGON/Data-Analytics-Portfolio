@@ -118,7 +118,7 @@ Death rate as (total_deaths / total_cases) * 100.
 - Applies RANK() OVER (ORDER BY death_rate DESC) to rank countries based on their COVID-19 death rates.
 - Countries with higher death rates receive lower numerical ranks (i.e., 1 is the highest death rate).
 ### 📊 Insights
-- Countries like Peru, Mexico, and some Eastern European nations rank highest in death rates (~8-10%), likely due to healthcare system strain and underreported cases.
+- Countries like Yemen, Mexico and Syria rank highest in death rates (~8-10%), likely due to healthcare system strain and underreported cases.
 - Developed nations with advanced medical infrastructure (e.g., Germany, Canada) rank lower (~1-2%), demonstrating the effectiveness of medical response and vaccination campaigns.
 ---  
 
@@ -176,7 +176,7 @@ This query:
 - Deaths per million people, calculated as (total_deaths / population) * 1,000,000, which allows for fair comparisons between countries of different sizes.
 2. Orders results by deaths_per_million in descending order, displaying the hardest-hit nations first.
 ### 📊 Insights
-- Peru, Belgium, and Italy have some of the highest deaths per million, reflecting severe outbreaks and healthcare system strain.
+- Hungary, Czechia and San Marino have some of the highest deaths per million, reflecting severe outbreaks and healthcare system strain.
 - Larger countries like India and China have lower deaths per million, despite high total deaths, due to large populations diluting the per capita impact.
 ---
 

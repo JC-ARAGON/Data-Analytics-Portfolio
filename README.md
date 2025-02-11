@@ -18,18 +18,17 @@ This is my portfolio of data analysis projects, showcasing my skills in SQL, Pyt
   - `sql_queries/`: SQL queries for data analysis.
 
 ## Tools Used
-- **SQL**: SQL Server for data extraction and analysis.
+- **SQL**: SQL Server for data extraction, cleaning and analysis.
 - **Python**: Pandas and Matplotlib for data cleaning and visualization.
 - **Tableau**: Interactive dashboards for insights visualization.
 
 ## Projects
-1. **[Sales Analysis with SQL and Tableau ](Tableau_SQL_Project/README.md)**:
+1. **[Sales Analysis with SQL and Tableau ](1_Tableau_SQL_Project/README.md)**:
    - Explores sales data.
    - Interactive Tableau dashboard visualizing revenue by region and top-selling products.
 
-2. **[Covid 19 Analysis with SQL](SQL-Data-Analysis/README.md)**:
+2. **[Covid 19 Analysis with SQL](2_SQL_Project/README.md)**:
    - SQL queries to analyze customer, product, and region performance.
-   - Results exported as CSV files.
 
 ## Interactive Dashboard
 Explore the full interactive dashboard on [Tableau Public](https://public.tableau.com/app/profile/juan.cruz.aragon/vizzes).

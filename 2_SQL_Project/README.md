@@ -17,7 +17,11 @@ To ensure **data integrity and consistency**, a **Data Cleaning** process was pe
 1. Open the file **`data_cleaning.sql`** to view the cleaning steps applied.  
 2. This script includes:  
    - Handling **missing values** in population and vaccination data.   
-   - Replacing NULLs in key numerical fields with **zero** where appropriate.  
+   - Replacing NULLs in key numerical fields with **zero** where appropriate.
+   - Removing Highly Incomplete Columns
+   - Removing Records Where continent is NULL
+
+
 
 📌 **Run the script in your SQL environment before performing any analysis** to ensure you work with a **clean and structured dataset**.  
 

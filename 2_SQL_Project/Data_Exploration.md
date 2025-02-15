@@ -64,6 +64,7 @@ ORDER BY avg_daily_cases DESC;
 
 ## Query 3: **Countries with the Highest COVID-19 Testing Rate**
 
+```sql
 SELECT 
     location,
     MAX(total_tests) AS total_tests_conducted,
@@ -73,9 +74,10 @@ FROM CovidVaccinations
 WHERE total_tests IS NOT NULL
 GROUP BY location
 ORDER BY testing_rate DESC;
-
 ```
+
 ![query_03.png](./visuals/query_03.png)
+
 ### 🔍 Explanation
 - Retrieves total COVID-19 tests conducted per country, ensuring only countries with available test data are included.
 - Uses MAX(total_tests) to get the highest recorded number of tests per country.

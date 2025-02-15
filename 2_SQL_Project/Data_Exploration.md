@@ -62,28 +62,29 @@ ORDER BY avg_daily_cases DESC;
 - Africa shows a higher death rate compared to cases, likely due to underreporting, limited healthcare resources, and lower testing availability.
 ---  
 
-## Query 3: **highest recorded total cases and deaths for each country**
+## Query 3: **Countries with the Highest COVID-19 Testing Rate**
 
-```sql
 SELECT 
     location,
-    MAX(total_cases) AS highest_total_cases,
-    MAX(total_deaths) AS highest_total_deaths,
-    (MAX(total_deaths) * 100.0 / NULLIF(MAX(total_cases), 0)) AS death_rate
-FROM CovidDeaths
+    MAX(total_tests) AS total_tests_conducted,
+    MAX(population) AS total_population,
+    (MAX(total_tests) * 100.0 / NULLIF(MAX(population), 0)) AS testing_rate
+FROM CovidVaccinations
+WHERE total_tests IS NOT NULL
 GROUP BY location
-ORDER BY highest_total_cases DESC;
+ORDER BY testing_rate DESC;
+
 ```
 ![query_03.png](./visuals/query_03.png)
 ### 🔍 Explanation
-- Retrieves the 10 countries with the highest number of total COVID-19 cases.
-- Uses MAX() to obtain the peak total cases and total deaths recorded for each country.
-- Calculates the death rate using (total_deaths / total_cases) * 100, showing how lethal the virus was in each country.
-- Orders the results in descending order of total cases, ensuring the most affected countries appear at the top.
+- Retrieves total COVID-19 tests conducted per country, ensuring only countries with available test data are included.
+- Uses MAX(total_tests) to get the highest recorded number of tests per country.
+- Calculates the testing_rate as (total_tests / population) * 100, showing the percentage of the population tested.
+- Orders results by testing_rate DESC, ranking countries with the highest testing coverage first.
 
 ### 📊 Insights
-- The United States, India, and Brazil rank among the top three countries with the highest reported cases, mainly due to large populations and extensive testing capacity.
-- Death rates vary significantly across countries, reflecting differences in healthcare quality, early intervention strategies, and vaccination rates.
+- Countries like Slovakia, the UAE, Iceland and Denmark have testing rates exceeding 100%, meaning on average, each person was tested multiple times.
+- Many low-income nations have testing rates below 10%, indicating limited access to testing and possible underreporting of cases.
 ---
 
 ## Query 4: Ranking Countries by COVID-19 Death Rate  
